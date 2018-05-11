@@ -1,0 +1,2 @@
+# mdmall
+Django MDMall project
