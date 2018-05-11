@@ -1,1 +1,282 @@
 INFO 2018-05-11 14:42:02,469 basehttp 124 "GET / HTTP/1.1" 200 1714
+WARNING 2018-05-11 17:30:37,724 base 152 Not Found: /users/index/
+WARNING 2018-05-11 17:30:37,725 basehttp 124 "GET /users/index/ HTTP/1.1" 404 2159
+WARNING 2018-05-11 17:30:49,987 base 152 Not Found: /users/image_code/fjla
+WARNING 2018-05-11 17:30:49,988 basehttp 124 "GET /users/image_code/fjla HTTP/1.1" 404 2186
+WARNING 2018-05-11 17:34:06,564 base 152 Not Found: /users/image_code/fjla
+WARNING 2018-05-11 17:34:06,566 basehttp 124 "GET /users/image_code/fjla HTTP/1.1" 404 2186
+INFO 2018-05-11 17:34:53,905 basehttp 124 "GET /image_code/fjla HTTP/1.1" 301 0
+ERROR 2018-05-11 17:34:53,928 exception 135 Internal Server Error: /image_code/fjla/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/users/views.py", line 18, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-05-11 17:34:54,080 basehttp 124 "GET /image_code/fjla/ HTTP/1.1" 500 99473
+ERROR 2018-05-11 17:35:28,048 exception 135 Internal Server Error: /image_code/1/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/users/views.py", line 18, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-05-11 17:35:28,112 basehttp 124 "GET /image_code/1/ HTTP/1.1" 500 99227
+ERROR 2018-05-11 17:36:57,603 exception 135 Internal Server Error: /image_code/1/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/users/views.py", line 19, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-05-11 17:36:57,694 basehttp 124 "GET /image_code/1/ HTTP/1.1" 500 99360
+ERROR 2018-05-11 17:48:44,564 exception 135 Internal Server Error: /image_code/1/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 20, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-05-11 17:48:44,655 basehttp 124 "GET /image_code/1/ HTTP/1.1" 500 99663
+ERROR 2018-05-11 17:49:36,674 exception 135 Internal Server Error: /image_code/1/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 19, in get
+    print(image.decode())
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR 2018-05-11 17:49:36,799 basehttp 124 "GET /image_code/1/ HTTP/1.1" 500 100676
+ERROR 2018-05-11 17:49:46,762 exception 135 Internal Server Error: /image_code/1/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 20, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-05-11 17:49:46,886 basehttp 124 "GET /image_code/1/ HTTP/1.1" 500 99647
+WARNING 2018-05-11 18:39:39,068 base 152 Not Found: /image_code/undefined/
+WARNING 2018-05-11 18:39:39,071 basehttp 124 "GET /image_code/undefined/ HTTP/1.1" 404 2187
+WARNING 2018-05-11 18:40:24,723 base 152 Not Found: /image_code/undefined/
+WARNING 2018-05-11 18:40:24,724 basehttp 124 "GET /image_code/undefined/ HTTP/1.1" 404 2187
+WARNING 2018-05-11 18:41:23,423 base 152 Not Found: /image_code/fe897969-57c3-4048-90bb-85813b950148/
+WARNING 2018-05-11 18:41:23,424 basehttp 124 "GET /image_code/fe897969-57c3-4048-90bb-85813b950148/ HTTP/1.1" 404 2268
+ERROR 2018-05-11 18:42:56,192 exception 135 Internal Server Error: /image_codes/fd66af89-3ffe-4f12-b7f9-ed69edcc36bc/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 19, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-05-11 18:42:56,311 basehttp 124 "GET /image_codes/fd66af89-3ffe-4f12-b7f9-ed69edcc36bc/ HTTP/1.1" 500 16632
+ERROR 2018-05-11 18:43:03,803 exception 135 Internal Server Error: /image_codes/73cd2c7c-43f0-4f16-b137-244078ac2576/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 19, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2018-05-11 18:43:03,836 basehttp 124 "GET /image_codes/73cd2c7c-43f0-4f16-b137-244078ac2576/ HTTP/1.1" 500 16632
+ERROR 2018-05-11 18:49:23,545 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x1108d9cf8>] value is not an integer or out of range
+ERROR 2018-05-11 18:49:23,548 basehttp 124 "GET /image_codes/b5c825bd-4307-45b5-a6ad-7bf420fd6228/ HTTP/1.1" 507 35
+ERROR 2018-05-11 18:53:42,344 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x1035b02e8>] value is not an integer or out of range
+ERROR 2018-05-11 18:53:42,346 basehttp 124 "GET /image_codes/60c35191-1043-458b-b332-360a3b591bd1/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:16:46,603 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x105a463c8>] value is not an integer or out of range
+ERROR 2018-05-11 19:16:46,604 basehttp 124 "GET /image_codes/feac20ea-8602-44cb-8120-b498e254d416/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:17:09,749 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x1057a1b38>] value is not an integer or out of range
+ERROR 2018-05-11 19:17:09,752 basehttp 124 "GET /image_codes/e854f2b9-6bfd-4c02-a04d-7527fc8ff045/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:20:39,096 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x10a7ff4e0>] value is not an integer or out of range
+ERROR 2018-05-11 19:20:40,769 basehttp 124 "GET /image_codes/a4dd02d2-3db9-4252-8295-f5731a8d3a5b/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:27:54,583 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x10d0ea6a0>] value is not an integer or out of range
+ERROR 2018-05-11 19:27:54,584 basehttp 124 "GET /image_codes/005d4629-7184-4647-bf6b-8e4d6f063efa/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:31:57,400 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x10d8da198>] value is not an integer or out of range
+ERROR 2018-05-11 19:31:57,401 basehttp 124 "GET /image_codes/71843887-35b7-4219-becc-8a1fc50bf793/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:32:33,629 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x10d8daa20>] value is not an integer or out of range
+ERROR 2018-05-11 19:32:33,630 basehttp 124 "GET /image_codes/3f45df2d-9392-401d-84f6-24e6ef5d6814/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:32:38,471 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x10d8e56d8>] value is not an integer or out of range
+ERROR 2018-05-11 19:32:38,472 basehttp 124 "GET /image_codes/4c209ae2-7aee-418c-ba04-52996da81745/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:36:00,426 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x10d8ee390>] value is not an integer or out of range
+ERROR 2018-05-11 19:36:00,427 basehttp 124 "GET /image_codes/7b873080-7862-4e37-9469-3398dad74016/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:36:24,431 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x104b2b6a0>] value is not an integer or out of range
+ERROR 2018-05-11 19:36:24,433 basehttp 124 "GET /image_codes/748a562e-0a1a-401b-acb3-3a47cb68a454/ HTTP/1.1" 507 35
+WARNING 2018-05-11 19:37:09,853 base 152 Not Found: /register.html
+WARNING 2018-05-11 19:37:09,854 basehttp 124 "GET /register.html HTTP/1.1" 404 2163
+WARNING 2018-05-11 19:37:09,983 base 152 Not Found: /favicon.ico
+WARNING 2018-05-11 19:37:09,983 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2157
+WARNING 2018-05-11 19:40:46,215 base 152 Not Found: /register.html
+WARNING 2018-05-11 19:40:46,216 basehttp 124 "GET /register.html HTTP/1.1" 404 2163
+ERROR 2018-05-11 19:41:47,121 exceptions 26 [<apps.verifications.views.ImageCodeView object at 0x108062b38>] value is not an integer or out of range
+ERROR 2018-05-11 19:41:47,122 basehttp 124 "GET /image_codes/26fb8ae2-caf1-4803-b175-d29041059562/ HTTP/1.1" 507 35
+ERROR 2018-05-11 19:42:32,070 exceptions 26 [<verifications.views.ImageCodeView object at 0x10c902710>] value is not an integer or out of range
+ERROR 2018-05-11 19:42:32,071 basehttp 124 "GET /image_codes/21c4d42d-b525-4e18-8ff1-1c79f4d45569/ HTTP/1.1" 507 35
+INFO 2018-05-11 20:10:58,416 basehttp 124 "GET /image_codes/5eb9c7a6-ea58-4d88-afa3-4cc39c47e77f/ HTTP/1.1" 200 3176
+INFO 2018-05-11 20:10:58,417 basehttp 124 "GET /image_codes/f425eb41-624f-41ba-b21e-dc1ab4d7941b/ HTTP/1.1" 200 3165
+INFO 2018-05-11 20:11:20,511 basehttp 124 "GET /image_codes/c0c9b4d8-6697-4f2d-a1de-df8e79ccde1e/ HTTP/1.1" 200 3561
+INFO 2018-05-11 20:11:21,149 basehttp 124 "GET /image_codes/462a2b28-b29a-4d25-8373-a429191c4914/ HTTP/1.1" 200 3138
+INFO 2018-05-11 20:11:21,551 basehttp 124 "GET /image_codes/b779ce18-1902-4c26-ae2e-862bb75efec8/ HTTP/1.1" 200 3166
+INFO 2018-05-11 20:11:21,750 basehttp 124 "GET /image_codes/2535db21-3eab-4c3d-951c-156f7577b5e7/ HTTP/1.1" 200 3081
+INFO 2018-05-11 20:11:22,121 basehttp 124 "GET /image_codes/0d164b52-a937-4541-aae2-7e9b18aa7c93/ HTTP/1.1" 200 3351
+INFO 2018-05-11 20:11:22,360 basehttp 124 "GET /image_codes/fc3972bd-4be5-4341-a44c-b1d86b38a904/ HTTP/1.1" 200 3141
+INFO 2018-05-11 20:11:22,637 basehttp 124 "GET /image_codes/a3a176f4-9b36-4b88-ac8d-83999e43becd/ HTTP/1.1" 200 3099
+INFO 2018-05-11 20:11:23,030 basehttp 124 "GET /image_codes/bf0b794b-4c37-4032-80df-72ae4e46bba8/ HTTP/1.1" 200 3189
+WARNING 2018-05-11 20:16:22,683 base 152 Not Found: /
+WARNING 2018-05-11 20:16:22,684 basehttp 124 "GET / HTTP/1.1" 404 2106
+WARNING 2018-05-11 20:17:13,441 base 152 Not Found: /image_codes2120aaaf-7309-4988-abaa-551546902ae3/
+WARNING 2018-05-11 20:17:13,442 basehttp 124 "GET /image_codes2120aaaf-7309-4988-abaa-551546902ae3/ HTTP/1.1" 404 2268
+WARNING 2018-05-11 20:17:16,099 base 152 Not Found: /image_codes57dbbc64-0b5a-49af-99f5-cd81f037e39b/
+WARNING 2018-05-11 20:17:16,099 basehttp 124 "GET /image_codes57dbbc64-0b5a-49af-99f5-cd81f037e39b/ HTTP/1.1" 404 2268
+INFO 2018-05-11 20:17:26,058 basehttp 124 "GET /image_codes/b15e8424-ebbf-4529-8da5-37f33c8eccd7/ HTTP/1.1" 200 2939
+INFO 2018-05-11 20:17:27,795 basehttp 124 "GET /image_codes/c7c46a37-41f2-411a-9f2c-29f83c570d9c/ HTTP/1.1" 200 3288
+ERROR 2018-05-11 23:06:26,309 exceptions 26 [<verifications.views.ImageCodeView object at 0x106452be0>] value is not an integer or out of range
+ERROR 2018-05-11 23:06:26,311 basehttp 124 "GET /image_codes/79434005-9481-4049-8ec8-29997029802b/ HTTP/1.1" 507 35
+ERROR 2018-05-11 23:06:34,874 exceptions 26 [<verifications.views.ImageCodeView object at 0x106571f60>] value is not an integer or out of range
+ERROR 2018-05-11 23:06:34,875 basehttp 124 "GET /image_codes/81fe39ae-5ab0-48bc-8db2-aefc00e703de/ HTTP/1.1" 507 35
+ERROR 2018-05-11 23:07:56,021 exceptions 26 [<verifications.views.ImageCodeView object at 0x104af8be0>] value is not an integer or out of range
+ERROR 2018-05-11 23:07:56,023 basehttp 124 "GET /image_codes/3a2dd7ec-bc2b-4894-a4e5-55d50f4106ca/ HTTP/1.1" 507 35
+ERROR 2018-05-11 23:08:44,586 exceptions 26 [<verifications.views.ImageCodeView object at 0x108b02978>] value is not an integer or out of range
+ERROR 2018-05-11 23:08:44,588 basehttp 124 "GET /image_codes/6872d379-77e7-4eaf-a0ae-94fb5bf57293/ HTTP/1.1" 507 35
+ERROR 2018-05-11 23:10:44,730 exceptions 26 [<verifications.views.ImageCodeView object at 0x1030e0128>] value is not an integer or out of range
+ERROR 2018-05-11 23:10:44,733 basehttp 124 "GET /image_codes/516fb22a-e91e-46c8-9946-7a4e06d2185f/ HTTP/1.1" 507 35
+INFO 2018-05-11 23:15:25,128 basehttp 124 "GET /image_codes/765a90a4-4121-4f6a-9a06-ac05ce049b5c/ HTTP/1.1" 200 3238
+INFO 2018-05-11 23:15:26,824 basehttp 124 "GET /image_codes/99e805e5-a22d-46d1-aede-11276573f968/ HTTP/1.1" 200 3315
+INFO 2018-05-11 23:15:27,324 basehttp 124 "GET /image_codes/3543d5aa-ee07-49cd-8f37-9e9d94262f7b/ HTTP/1.1" 200 2958
+INFO 2018-05-11 23:15:27,707 basehttp 124 "GET /image_codes/ebd03946-e37b-4fd8-8b4a-24c051d315a6/ HTTP/1.1" 200 3150
