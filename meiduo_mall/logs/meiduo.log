@@ -280,3 +280,332 @@ INFO 2018-05-11 23:15:25,128 basehttp 124 "GET /image_codes/765a90a4-4121-4f6a-9
 INFO 2018-05-11 23:15:26,824 basehttp 124 "GET /image_codes/99e805e5-a22d-46d1-aede-11276573f968/ HTTP/1.1" 200 3315
 INFO 2018-05-11 23:15:27,324 basehttp 124 "GET /image_codes/3543d5aa-ee07-49cd-8f37-9e9d94262f7b/ HTTP/1.1" 200 2958
 INFO 2018-05-11 23:15:27,707 basehttp 124 "GET /image_codes/ebd03946-e37b-4fd8-8b4a-24c051d315a6/ HTTP/1.1" 200 3150
+INFO 2018-05-12 00:02:41,853 basehttp 124 "GET /image_codes/afdf4972-ad99-4601-8124-8d9f449624fc/ HTTP/1.1" 200 3134
+INFO 2018-05-12 00:02:42,296 basehttp 124 "GET /image_codes/d6d609fb-c8bd-4122-a77c-47d017ef90ec/ HTTP/1.1" 200 3047
+INFO 2018-05-12 00:19:44,417 basehttp 124 "GET /image_codes/74e5d315-4ae7-4dae-a88b-5fdd0459090d/ HTTP/1.1" 200 3304
+WARNING 2018-05-12 16:07:46,365 basehttp 124 "GET /image_codes/2db32077-7ad8-46d6-9b42-616210ceeeed/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:07:47,711 basehttp 124 "GET /image_codes/bf02cef0-ef3f-48be-a326-c37034e61732/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:08:33,584 basehttp 124 "GET /image_codes/1eb7a693-f8de-4498-af56-b598323f4a5b/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:10:31,825 basehttp 124 "GET /image_codes/ab1956bf-67b0-4259-abc7-5e51a2e95e4d/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:10:44,379 basehttp 124 "GET /image_codes/7f6d0fcc-0fef-40fc-bb7b-d55787081862/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:11:59,279 basehttp 124 "GET /image_codes/2c6de4bc-22fe-429e-9680-082fd7e0d3dc/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:14:37,244 basehttp 124 "GET /image_codes/00c20f3d-12b8-47dd-be31-3c0b1975c129/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:14:43,643 basehttp 124 "GET /image_codes/5174a560-1412-4649-be99-57b30ac7a9b4/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:15:36,214 basehttp 124 "GET /image_codes/a5f11fe4-d6c1-48e2-b6f7-be62877fbe21/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:17:31,872 basehttp 124 "GET /image_codes/2766bb94-f985-4a75-afae-dccc65ea58ae/ HTTP/1.1" 405 40
+ERROR 2018-05-12 16:18:09,998 exception 135 Internal Server Error: /image_codes/2766bb94-f985-4a75-afae-dccc65ea58ae/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-12 16:18:10,441 basehttp 124 "GET /image_codes/2766bb94-f985-4a75-afae-dccc65ea58ae/ HTTP/1.1" 500 83237
+WARNING 2018-05-12 16:19:00,031 basehttp 124 "GET /image_codes/65c0198c-3a3b-4b9d-abc4-a49487470965/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:01,455 basehttp 124 "GET /image_codes/4dc5aa16-e9f2-4ead-938d-8f1554993edc/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:01,851 basehttp 124 "GET /image_codes/2a142abc-d95d-457e-bc36-436742235b1c/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:02,152 basehttp 124 "GET /image_codes/adc7274d-a1b0-4c56-8e63-7bdd58906814/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:02,564 basehttp 124 "GET /image_codes/788f6025-14cf-4d2e-a53e-e16b5638c289/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:03,586 basehttp 124 "GET /image_codes/3c7d9b52-f5b7-4128-b27d-54c37043dae4/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:04,852 basehttp 124 "GET /image_codes/181bcd97-b91a-4cf9-90d1-03a078c4f154/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:05,375 basehttp 124 "GET /image_codes/ef0d7f8b-8fd9-4bfb-8046-73a537a74d05/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:19:05,846 basehttp 124 "GET /image_codes/1b5afd97-d234-4bb3-8d9b-b04ba18bd00a/ HTTP/1.1" 405 40
+ERROR 2018-05-12 16:19:07,281 exception 135 Internal Server Error: /image_codes/1b5afd97-d234-4bb3-8d9b-b04ba18bd00a/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-12 16:19:07,406 basehttp 124 "GET /image_codes/1b5afd97-d234-4bb3-8d9b-b04ba18bd00a/ HTTP/1.1" 500 81596
+WARNING 2018-05-12 16:20:32,214 basehttp 124 "GET /image_codes/cf42ec14-8784-4e0a-9bf2-1b1a90232d16/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:20:35,227 basehttp 124 "GET /image_codes/62ca7f10-063f-48b1-a252-a73f9b9d00b1/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:20:57,731 basehttp 124 "GET /image_codes/ba736f92-58cc-4b4a-b3d5-abcfd99200eb/ HTTP/1.1" 405 40
+INFO 2018-05-12 16:30:35,462 basehttp 124 "GET /image_codes/f3cd7dbd-a176-4a57-bb18-aba144d0f9f8/ HTTP/1.1" 200 3099
+INFO 2018-05-12 16:33:02,766 basehttp 124 "GET /image_codes/f3ec161c-b255-4e10-808c-e46a2fae2f6e/ HTTP/1.1" 200 3120
+INFO 2018-05-12 16:33:04,278 basehttp 124 "GET /image_codes/a04dda13-594d-4820-94c7-9dc301944e67/ HTTP/1.1" 200 3037
+INFO 2018-05-12 16:33:04,682 basehttp 124 "GET /image_codes/afe1686d-726e-4d1a-8868-7ffa6a6367ef/ HTTP/1.1" 200 3337
+INFO 2018-05-12 16:33:05,070 basehttp 124 "GET /image_codes/a2ccf803-e687-40a2-8968-d7ccd334cb62/ HTTP/1.1" 200 2833
+INFO 2018-05-12 16:33:05,363 basehttp 124 "GET /image_codes/2c78c92d-110f-47bf-aa9c-d9cdb292567a/ HTTP/1.1" 200 2934
+INFO 2018-05-12 16:33:05,573 basehttp 124 "GET /image_codes/2c78c92d-110f-47bf-aa9c-d9cdb292567a/ HTTP/1.1" 200 2989
+INFO 2018-05-12 16:33:05,726 basehttp 124 "GET /image_codes/54b191b3-cb3e-4ab6-89f2-aa2432677df3/ HTTP/1.1" 200 3097
+INFO 2018-05-12 16:33:06,076 basehttp 124 "GET /image_codes/798a091d-8431-46e1-b84f-834f56e4de17/ HTTP/1.1" 200 3774
+INFO 2018-05-12 16:33:06,294 basehttp 124 "GET /image_codes/798a091d-8431-46e1-b84f-834f56e4de17/ HTTP/1.1" 200 3021
+INFO 2018-05-12 16:33:06,296 basehttp 124 "GET /image_codes/b2accb75-ef31-4774-8707-6375dc7be01e/ HTTP/1.1" 200 3273
+INFO 2018-05-12 16:37:11,380 basehttp 124 "GET /image_codes/e78e86a0-f4cd-41ad-b55a-918c38e244e6/ HTTP/1.1" 200 3380
+WARNING 2018-05-12 16:40:51,904 base 152 Not Found: /image_codes050f4693-beaa-4478-a72c-65da771f1f8e/
+WARNING 2018-05-12 16:40:51,911 basehttp 124 "GET /image_codes050f4693-beaa-4478-a72c-65da771f1f8e/ HTTP/1.1" 404 2268
+WARNING 2018-05-12 16:41:01,894 basehttp 124 "GET /image_codes/0f46e3b7-2b7d-46da-8b6a-b7f9cee2c656/ HTTP/1.1" 405 40
+WARNING 2018-05-12 16:41:21,710 basehttp 124 "GET /image_codes/fd9fd89e-7696-4ff2-bb8e-f51c36fd320e/ HTTP/1.1" 405 40
+INFO 2018-05-12 16:41:56,322 basehttp 124 "GET /image_codes/e7770f5b-5e28-432f-9461-e312909321ca/ HTTP/1.1" 200 3009
+INFO 2018-05-12 16:41:57,570 basehttp 124 "GET /image_codes/ffd5e7f7-bc15-4fdf-926e-33748f56d840/ HTTP/1.1" 200 3401
+INFO 2018-05-12 16:41:57,841 basehttp 124 "GET /image_codes/13659f97-1c44-474f-8ea5-6b25b2690b84/ HTTP/1.1" 200 3263
+INFO 2018-05-12 16:41:58,124 basehttp 124 "GET /image_codes/1a4d59f2-bfa0-4c37-94a9-e800487ef968/ HTTP/1.1" 200 3023
+INFO 2018-05-13 08:56:50,178 basehttp 124 "GET /image_codes/02d668a5-84dd-4881-b0f2-7751e6f44cda/ HTTP/1.1" 200 2675
+INFO 2018-05-13 09:00:46,597 basehttp 124 "GET /image_codes/10d1f12f-593f-429b-807e-cfbb38ede1c9/ HTTP/1.1" 200 3498
+INFO 2018-05-14 16:37:32,746 basehttp 124 "GET /image_codes/abe8e2e3-8dfd-46a1-876d-ff0e0780d358/ HTTP/1.1" 200 3217
+INFO 2018-05-14 16:37:35,664 basehttp 124 "GET /image_codes/c282a886-2e8f-45a5-bcf5-86f57c4ab446/ HTTP/1.1" 200 3147
+INFO 2018-05-14 16:37:36,180 basehttp 124 "GET /image_codes/e53fd935-c963-4e94-92f7-0be83b3eba98/ HTTP/1.1" 200 3109
+INFO 2018-05-14 16:37:36,601 basehttp 124 "GET /image_codes/6ffa3b09-ac94-4079-8b2c-081a4750f484/ HTTP/1.1" 200 3112
+ERROR 2018-05-14 16:38:07,477 exception 135 Internal Server Error: /sms_codes/18800001111/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 45, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 18, in validate
+    real_image_code = redis_conn.get("IMAGE_CODE_" + image_code_id)
+TypeError: must be str, not UUID
+ERROR 2018-05-14 16:38:07,569 basehttp 124 "GET /sms_codes/18800001111/?text=oet2&image_code_id=6ffa3b09-ac94-4079-8b2c-081a4750f484 HTTP/1.1" 500 17009
+INFO 2018-05-14 16:42:06,570 basehttp 124 "GET /image_codes/a1445ea8-12b3-42b6-810f-1525bf00d0b0/ HTTP/1.1" 200 3495
+ERROR 2018-05-14 16:42:32,704 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 45, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 18, in validate
+    real_image_code = redis_conn.get("IMAGE_CODE_" + image_code_id)
+TypeError: must be str, not UUID
+ERROR 2018-05-14 16:42:32,764 basehttp 124 "GET /sms_codes/18811110000/?text=mvr3&image_code_id=a1445ea8-12b3-42b6-810f-1525bf00d0b0 HTTP/1.1" 500 17009
+INFO 2018-05-14 16:42:40,202 basehttp 124 "GET /image_codes/177c8ace-2220-4a7d-ac59-63cb6d200799/ HTTP/1.1" 200 3449
+ERROR 2018-05-14 16:42:52,410 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 45, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 18, in validate
+    real_image_code = redis_conn.get("IMAGE_CODE_" + image_code_id)
+TypeError: must be str, not UUID
+ERROR 2018-05-14 16:42:52,439 basehttp 124 "GET /sms_codes/18811110000/?text=hkaj&image_code_id=177c8ace-2220-4a7d-ac59-63cb6d200799 HTTP/1.1" 500 17009
+INFO 2018-05-14 16:46:33,493 basehttp 124 "GET /image_codes/06954066-bbb2-415c-8b6b-0fa243b4a6ca/ HTTP/1.1" 200 3411
+INFO 2018-05-14 16:46:53,201 basehttp 124 "GET /image_codes/fe8fa54b-4881-4974-872c-687ad0385acd/ HTTP/1.1" 200 3683
+ERROR 2018-05-14 16:47:02,090 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 45, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 27, in validate
+    if image_code_id.lower() != real_image_code.lower():
+AttributeError: 'UUID' object has no attribute 'lower'
+ERROR 2018-05-14 16:47:02,157 basehttp 124 "GET /sms_codes/18811110000/?text=wxfe&image_code_id=fe8fa54b-4881-4974-872c-687ad0385acd HTTP/1.1" 500 17042
+INFO 2018-05-14 16:50:50,688 basehttp 124 "GET /image_codes/733e26f7-4e71-4050-942b-ffa9392be45e/ HTTP/1.1" 200 3620
+WARNING 2018-05-14 16:51:10,054 basehttp 124 "GET /sms_codes/18811110000/?text=uwym&image_code_id=733e26f7-4e71-4050-942b-ffa9392be45e HTTP/1.1" 400 52
+INFO 2018-05-14 16:51:16,941 basehttp 124 "GET /image_codes/11f52a45-af08-4d15-8644-838004cd8376/ HTTP/1.1" 200 2972
+INFO 2018-05-14 16:51:23,870 basehttp 124 "GET /image_codes/e6627c25-c21c-48fd-8c08-4fe085dbed1f/ HTTP/1.1" 200 3377
+WARNING 2018-05-14 16:51:27,862 basehttp 124 "GET /sms_codes/18811110000/?text=vbmc&image_code_id=e6627c25-c21c-48fd-8c08-4fe085dbed1f HTTP/1.1" 400 52
+INFO 2018-05-14 16:52:06,845 basehttp 124 "GET /image_codes/a97cd3c2-5528-4fff-a081-a0dbbb3e0031/ HTTP/1.1" 200 3268
+INFO 2018-05-14 16:53:10,848 basehttp 124 "GET /image_codes/4dd9d47a-3fab-40f0-bcc0-448cd6dfdcc2/ HTTP/1.1" 200 3273
+ERROR 2018-05-14 16:54:35,161 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 53, in get
+    pl = redis_conn.pipiline()
+AttributeError: 'StrictRedis' object has no attribute 'pipiline'
+ERROR 2018-05-14 16:54:35,317 basehttp 124 "GET /sms_codes/18811110000/?text=p38i&image_code_id=4dd9d47a-3fab-40f0-bcc0-448cd6dfdcc2 HTTP/1.1" 500 17690
+INFO 2018-05-14 16:59:25,078 basehttp 124 "GET /image_codes/358efb4c-9c33-4cc6-8c00-7801e167adf5/ HTTP/1.1" 200 3061
+INFO 2018-05-14 17:01:12,679 basehttp 124 "GET /sms_codes/18811110000/?text=n4ek&image_code_id=358efb4c-9c33-4cc6-8c00-7801e167adf5 HTTP/1.1" 200 16
+INFO 2018-05-14 17:05:41,621 basehttp 124 "GET /image_codes/d48eb2bb-fab5-4956-af30-4aa5ce5d4d6c/ HTTP/1.1" 200 3344
+INFO 2018-05-14 17:07:03,456 basehttp 124 "GET /image_codes/86d4f79e-e696-40a9-a6fe-2044a9c64ca8/ HTTP/1.1" 200 2791
+INFO 2018-05-14 17:07:18,809 basehttp 124 "GET /image_codes/1778503e-5dfe-40c5-b05e-e030a07bda80/ HTTP/1.1" 200 3197
+INFO 2018-05-14 17:07:22,705 basehttp 124 "GET /image_codes/8bb4426e-b763-442f-a681-24e058ad006f/ HTTP/1.1" 200 3098
+INFO 2018-05-14 17:07:39,156 basehttp 124 "GET /sms_codes/18811110000/?text=oyeq&image_code_id=8bb4426e-b763-442f-a681-24e058ad006f HTTP/1.1" 200 16
+INFO 2018-05-14 17:11:56,193 basehttp 124 "GET /image_codes/069b8b4a-c06d-46eb-aba9-3094cb6e75fb/ HTTP/1.1" 200 3046
+INFO 2018-05-14 17:12:50,414 basehttp 124 "GET /image_codes/2339b263-0339-4ed1-b052-a688744c9a29/ HTTP/1.1" 200 3416
+INFO 2018-05-14 17:12:58,919 basehttp 124 "GET /image_codes/5061ba1e-4d71-4ebd-afbc-d2fe1d9b727d/ HTTP/1.1" 200 2935
+INFO 2018-05-14 17:14:18,178 basehttp 124 "GET /sms_codes/18811110000/?text=tavx&image_code_id=5061ba1e-4d71-4ebd-afbc-d2fe1d9b727d HTTP/1.1" 200 16
+INFO 2018-05-14 17:16:44,950 basehttp 124 "GET /sms_codes/18811110000/?text=tavx&image_code_id=5061ba1e-4d71-4ebd-afbc-d2fe1d9b727d HTTP/1.1" 200 16
+INFO 2018-05-14 17:16:49,863 basehttp 124 "GET /image_codes/f94a6965-a3e8-4d82-8304-11031baaf387/ HTTP/1.1" 200 3521
+WARNING 2018-05-14 17:17:10,746 basehttp 124 "GET /sms_codes/18811110000/?text=6dqx&image_code_id=f94a6965-a3e8-4d82-8304-11031baaf387 HTTP/1.1" 400 55
+INFO 2018-05-14 17:17:12,536 basehttp 124 "GET /image_codes/bf2fe8fe-fdaa-4f28-8d5a-c24ecc520465/ HTTP/1.1" 200 3350
+WARNING 2018-05-14 17:17:16,778 basehttp 124 "GET /sms_codes/18811110000/?text=tfmf&image_code_id=bf2fe8fe-fdaa-4f28-8d5a-c24ecc520465 HTTP/1.1" 400 55
+INFO 2018-05-14 18:10:09,069 basehttp 124 "GET /image_codes/73015306-63cc-4a0c-bb68-79d121e2268e/ HTTP/1.1" 200 2970
+INFO 2018-05-14 18:10:33,580 basehttp 124 "GET /image_codes/3dde486b-d14d-4c0a-8625-fab221bbeae4/ HTTP/1.1" 200 3489
+INFO 2018-05-14 18:10:34,613 basehttp 124 "GET /image_codes/a1e0cf0c-4ee5-49b8-8ae0-ecccbb2aecfe/ HTTP/1.1" 200 3280
+INFO 2018-05-14 18:10:37,432 basehttp 124 "GET /image_codes/bd8dacd5-bc33-4e51-a3e3-c98f57f45f41/ HTTP/1.1" 200 3410
+INFO 2018-05-14 18:11:26,254 basehttp 124 "GET /image_codes/90104300-922e-45a7-809d-addad7f82631/ HTTP/1.1" 200 3414
+INFO 2018-05-14 18:11:58,848 basehttp 124 "GET /sms_codes/18811110000/?text=hpeq&image_code_id=bd8dacd5-bc33-4e51-a3e3-c98f57f45f41 HTTP/1.1" 200 16
+INFO 2018-05-14 18:12:42,123 basehttp 124 "GET /image_codes/563cbe4b-7a5d-4ddb-a917-7bc9259ea182/ HTTP/1.1" 200 3221
+INFO 2018-05-14 18:14:12,923 basehttp 124 "GET /sms_codes/18811110000/?text=sof7&image_code_id=563cbe4b-7a5d-4ddb-a917-7bc9259ea182 HTTP/1.1" 200 16
+INFO 2018-05-14 18:14:48,997 basehttp 124 "GET /image_codes/a34e8586-7fa0-4bed-aa9b-a7c0778d6c4a/ HTTP/1.1" 200 3567
+ERROR 2018-05-14 18:15:11,924 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 50, in get
+    logging.log(sms_code)
+TypeError: log() missing 1 required positional argument: 'msg'
+ERROR 2018-05-14 18:15:12,045 basehttp 124 "GET /sms_codes/18811110000/?text=t53f&image_code_id=a34e8586-7fa0-4bed-aa9b-a7c0778d6c4a HTTP/1.1" 500 17681
+INFO 2018-05-14 18:15:40,876 basehttp 124 "GET /image_codes/d6442c97-8c47-4e0b-a4d0-ac62280ad49d/ HTTP/1.1" 200 3230
+INFO 2018-05-14 18:15:54,483 basehttp 124 "GET /image_codes/84a70f60-0fac-4b1d-8bb7-554107a27164/ HTTP/1.1" 200 3097
+INFO 2018-05-14 18:19:10,774 basehttp 124 "GET /image_codes/e6740806-cff0-44b8-b118-ba014eee636c/ HTTP/1.1" 200 2845
+ERROR 2018-05-14 18:19:25,071 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 50, in get
+    logging.debug('短信验证码是：%d' %sms_code)
+TypeError: %d format: a number is required, not str
+ERROR 2018-05-14 18:19:25,144 basehttp 124 "GET /sms_codes/18811110000/?text=48no&image_code_id=e6740806-cff0-44b8-b118-ba014eee636c HTTP/1.1" 500 16473
+INFO 2018-05-14 18:21:40,199 basehttp 124 "GET /image_codes/89812613-3d24-46ce-801a-3cff61cdb18d/ HTTP/1.1" 200 3218
+WARNING 2018-05-14 18:21:55,633 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:02,747 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:03,620 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:03,792 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:04,156 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:04,315 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:04,507 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:04,672 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:04,832 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:04,999 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:05,184 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:05,368 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:05,566 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:05,736 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:05,941 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:06,123 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:06,309 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:06,487 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+WARNING 2018-05-14 18:22:06,665 basehttp 124 "GET /sms_codes/18811110000/?text=rjvj&image_code_id=89812613-3d24-46ce-801a-3cff61cdb18d HTTP/1.1" 400 55
+INFO 2018-05-14 18:22:46,573 basehttp 124 "GET /sms_codes/18811110000/?text=48no&image_code_id=e6740806-cff0-44b8-b118-ba014eee636c HTTP/1.1" 200 16
+INFO 2018-05-14 18:24:03,562 basehttp 124 "GET /image_codes/6691a923-053d-4a9c-b25b-44e63c57628e/ HTTP/1.1" 200 3564
+INFO 2018-05-14 18:25:34,211 basehttp 124 "GET /sms_codes/18811110000/?text=uhfg&image_code_id=6691a923-053d-4a9c-b25b-44e63c57628e HTTP/1.1" 200 16
+INFO 2018-05-14 19:41:03,093 basehttp 124 "GET /image_codes/c068bd6e-70f0-44b9-96fc-3d8caf604d2b/ HTTP/1.1" 200 3442
+INFO 2018-05-14 19:42:05,759 basehttp 124 "GET /image_codes/457c9ec4-8293-46a8-98ea-9c0bd4aa7ed1/ HTTP/1.1" 200 3494
