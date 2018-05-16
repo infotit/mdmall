@@ -609,3 +609,1574 @@ INFO 2018-05-14 18:24:03,562 basehttp 124 "GET /image_codes/6691a923-053d-4a9c-b
 INFO 2018-05-14 18:25:34,211 basehttp 124 "GET /sms_codes/18811110000/?text=uhfg&image_code_id=6691a923-053d-4a9c-b25b-44e63c57628e HTTP/1.1" 200 16
 INFO 2018-05-14 19:41:03,093 basehttp 124 "GET /image_codes/c068bd6e-70f0-44b9-96fc-3d8caf604d2b/ HTTP/1.1" 200 3442
 INFO 2018-05-14 19:42:05,759 basehttp 124 "GET /image_codes/457c9ec4-8293-46a8-98ea-9c0bd4aa7ed1/ HTTP/1.1" 200 3494
+INFO 2018-05-16 14:59:12,963 basehttp 124 "GET /image_codes/08c20c72-8608-44d4-9d07-14c2b9d1b4ad/ HTTP/1.1" 200 3096
+INFO 2018-05-16 14:59:16,250 basehttp 124 "GET /image_codes/3d727ded-d601-4001-871f-7abed36ad5f8/ HTTP/1.1" 200 3222
+INFO 2018-05-16 14:59:16,621 basehttp 124 "GET /image_codes/b1d018f4-13e0-4ebf-aac2-846a7492e08e/ HTTP/1.1" 200 3287
+INFO 2018-05-16 14:59:16,802 basehttp 124 "GET /image_codes/83c795b4-1442-47a9-bb86-93b627b9740d/ HTTP/1.1" 200 3348
+INFO 2018-05-16 15:01:49,978 basehttp 124 "GET /image_codes/404213bc-fcbf-4b9c-a361-5ac0925cf561/ HTTP/1.1" 200 3366
+WARNING 2018-05-16 15:01:52,376 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:01:52,378 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:02:01,726 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:02:01,727 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:02:04,620 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:02:04,624 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:02:04,630 basehttp 124 "GET /sms_codes/18811110000/?text=trcq&image_code_id=404213bc-fcbf-4b9c-a361-5ac0925cf561 HTTP/1.1" 400 52
+INFO 2018-05-16 15:02:07,124 basehttp 124 "GET /image_codes/b2337a23-5363-4bf2-8320-79dc4b8dc961/ HTTP/1.1" 200 3292
+WARNING 2018-05-16 15:02:13,400 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:02:13,403 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+ERROR 2018-05-16 15:02:13,405 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 101, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 438, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+AssertionError: .validate() should return the validated data
+ERROR 2018-05-16 15:02:13,457 basehttp 124 "GET /sms_codes/18811110000/?text=nt4r&image_code_id=b2337a23-5363-4bf2-8320-79dc4b8dc961 HTTP/1.1" 500 16969
+WARNING 2018-05-16 15:03:04,627 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:03:04,628 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+ERROR 2018-05-16 15:03:04,634 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 101, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 17, in validate
+    real_image_code = real_image_code.decode()
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2018-05-16 15:03:04,678 basehttp 124 "GET /sms_codes/18811110000/?text=nt4r&image_code_id=b2337a23-5363-4bf2-8320-79dc4b8dc961 HTTP/1.1" 500 17112
+INFO 2018-05-16 15:04:23,083 basehttp 124 "GET /image_codes/023b3895-2106-45c7-a6ee-9f2dcf90a0ad/ HTTP/1.1" 200 3439
+WARNING 2018-05-16 15:04:25,872 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:04:25,880 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:04:32,999 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:04:33,001 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:04:37,368 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:04:37,377 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+INFO 2018-05-16 15:06:32,794 basehttp 124 "GET /sms_codes/18811110000/?text=c3sr&image_code_id=023b3895-2106-45c7-a6ee-9f2dcf90a0ad HTTP/1.1" 200 16
+INFO 2018-05-16 15:06:42,352 basehttp 124 "GET /image_codes/f4d70e42-e8d4-4cce-a3df-5bb51f33ca73/ HTTP/1.1" 200 2928
+INFO 2018-05-16 15:06:44,886 basehttp 124 "GET /image_codes/3b835ca7-af92-48b7-9952-98d846df3c97/ HTTP/1.1" 200 2904
+WARNING 2018-05-16 15:06:47,224 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:06:47,228 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:07:06,634 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:07:06,637 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:07:10,449 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:07:10,465 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:10:19,521 basehttp 124 "GET /sms_codes/18811110000/?text=etkd&image_code_id=3b835ca7-af92-48b7-9952-98d846df3c97 HTTP/1.1" 400 55
+INFO 2018-05-16 15:12:21,521 basehttp 124 "GET /image_codes/5af95c6d-f095-4d2b-af08-4d23a57c73e0/ HTTP/1.1" 200 3496
+WARNING 2018-05-16 15:12:25,446 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:12:25,456 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:12:36,284 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:12:36,287 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:12:42,068 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:12:42,079 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:12:50,877 basehttp 124 "GET /sms_codes/18811110000/?text=qcvk&image_code_id=5af95c6d-f095-4d2b-af08-4d23a57c73e0 HTTP/1.1" 400 52
+WARNING 2018-05-16 15:13:02,751 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:13:02,761 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+ERROR 2018-05-16 15:13:15,723 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 101, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 17, in validate
+    real_image_code = real_image_code.decode()
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2018-05-16 15:13:15,857 basehttp 124 "GET /sms_codes/18811110000/?text=qgvk&image_code_id=5af95c6d-f095-4d2b-af08-4d23a57c73e0 HTTP/1.1" 500 18328
+INFO 2018-05-16 15:25:05,556 basehttp 124 "GET /image_codes/a9e08d13-123a-4baa-9b6f-5aecabfffa76/ HTTP/1.1" 200 3100
+WARNING 2018-05-16 15:25:08,063 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:25:08,073 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:25:16,060 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:25:16,064 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:25:18,847 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:25:18,863 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+ERROR 2018-05-16 15:25:39,595 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 113, in get
+    send_sms_code.deley(mobile, sms_code)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/celery/local.py", line 146, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'send_sms_code' object has no attribute 'deley'
+ERROR 2018-05-16 15:25:39,709 basehttp 124 "GET /sms_codes/18811110000/?text=jzbv&image_code_id=a9e08d13-123a-4baa-9b6f-5aecabfffa76 HTTP/1.1" 500 17940
+INFO 2018-05-16 15:30:19,715 basehttp 124 "GET /image_codes/d8c5cbe8-9cb2-46c0-a9b3-022ea37fd247/ HTTP/1.1" 200 3378
+WARNING 2018-05-16 15:30:24,855 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:30:24,914 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:30:30,063 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:30:30,064 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:30:33,581 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:30:33,587 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+ERROR 2018-05-16 15:30:33,609 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 113, in get
+    send_sms_code.deley(mobile, sms_code)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/celery/local.py", line 146, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'send_sms_code' object has no attribute 'deley'
+ERROR 2018-05-16 15:30:33,695 basehttp 124 "GET /sms_codes/18811110000/?text=qeeb&image_code_id=d8c5cbe8-9cb2-46c0-a9b3-022ea37fd247 HTTP/1.1" 500 16724
+INFO 2018-05-16 15:33:40,373 basehttp 124 "GET /image_codes/6b3d5a6f-7239-4ed1-bb45-ef2a7024ef39/ HTTP/1.1" 200 3277
+WARNING 2018-05-16 15:33:45,234 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:33:45,236 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:33:50,739 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:33:50,740 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:33:53,919 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:33:53,923 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+INFO 2018-05-16 15:33:53,993 basehttp 124 "GET /sms_codes/18811110000/?text=tgv5&image_code_id=6b3d5a6f-7239-4ed1-bb45-ef2a7024ef39 HTTP/1.1" 200 16
+INFO 2018-05-16 15:34:43,287 basehttp 124 "GET /image_codes/1a57c648-37f5-43e8-920a-601b5afa36dc/ HTTP/1.1" 200 3386
+INFO 2018-05-16 15:35:27,843 basehttp 124 "GET /image_codes/a0f1d319-5f99-4ed2-92c3-9d657978ca2c/ HTTP/1.1" 200 3125
+WARNING 2018-05-16 15:36:00,619 base 152 Not Found: /usernames/python3/count/
+WARNING 2018-05-16 15:36:00,620 basehttp 124 "GET /usernames/python3/count/ HTTP/1.1" 404 2384
+WARNING 2018-05-16 15:36:07,881 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:36:07,881 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:36:12,000 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:36:12,004 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+INFO 2018-05-16 15:36:12,009 basehttp 124 "GET /sms_codes/18811110000/?text=tqkr&image_code_id=a0f1d319-5f99-4ed2-92c3-9d657978ca2c HTTP/1.1" 200 16
+INFO 2018-05-16 15:40:39,916 basehttp 124 "GET /image_codes/ba564adc-eae4-470e-9434-9fc35b78e03e/ HTTP/1.1" 200 2837
+WARNING 2018-05-16 15:40:46,082 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:40:46,083 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:40:52,279 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:40:52,280 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+INFO 2018-05-16 15:40:54,674 basehttp 124 "GET /image_codes/eff2ffdc-7390-4ec5-bd1e-9041451b88f4/ HTTP/1.1" 200 3040
+WARNING 2018-05-16 15:40:59,166 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:40:59,168 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+INFO 2018-05-16 15:40:59,174 basehttp 124 "GET /sms_codes/18811110000/?text=zbsk&image_code_id=eff2ffdc-7390-4ec5-bd1e-9041451b88f4 HTTP/1.1" 200 16
+INFO 2018-05-16 15:46:23,762 basehttp 124 "GET /image_codes/70692725-7e2e-411b-81ea-94c3112a78aa/ HTTP/1.1" 200 3138
+INFO 2018-05-16 15:46:52,364 basehttp 124 "GET /image_codes/1864b9bb-9040-4dd9-9057-cca2890cf219/ HTTP/1.1" 200 3088
+INFO 2018-05-16 15:47:10,775 basehttp 124 "GET /image_codes/dc3f550d-c9d3-485d-9b56-ca88c58d4542/ HTTP/1.1" 200 3318
+WARNING 2018-05-16 15:48:28,693 base 152 Not Found: /usernames/python/count/
+WARNING 2018-05-16 15:48:28,693 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 404 2381
+WARNING 2018-05-16 15:48:42,005 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:48:42,006 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+WARNING 2018-05-16 15:48:50,012 base 152 Not Found: /mobiles/18811110000/count/
+WARNING 2018-05-16 15:48:50,015 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 404 2390
+INFO 2018-05-16 15:48:50,025 basehttp 124 "GET /sms_codes/18811110000/?text=ygtc&image_code_id=dc3f550d-c9d3-485d-9b56-ca88c58d4542 HTTP/1.1" 200 16
+INFO 2018-05-16 15:51:20,812 basehttp 124 "GET /image_codes/c705ed73-2387-4141-8bb1-5876d050572e/ HTTP/1.1" 200 3322
+INFO 2018-05-16 15:56:34,881 basehttp 124 "GET /image_codes/40b2d15c-7b1e-4cd8-abc5-76dcedaf144b/ HTTP/1.1" 200 2985
+INFO 2018-05-16 16:08:20,529 basehttp 124 "GET /image_codes/826b667b-200c-4e54-91b9-d5c9cf3d7520/ HTTP/1.1" 200 3563
+INFO 2018-05-16 16:08:38,229 basehttp 124 "GET /image_codes/a54a3c08-b742-4934-9320-394af94360ef/ HTTP/1.1" 200 3386
+INFO 2018-05-16 16:08:45,170 basehttp 124 "GET /image_codes/3b7ea2e9-e488-4de0-a237-86430196d202/ HTTP/1.1" 200 2856
+INFO 2018-05-16 16:09:16,437 basehttp 124 "GET /image_codes/5ef13a9c-0111-4b24-bcca-ee91788078fc/ HTTP/1.1" 200 3250
+ERROR 2018-05-16 16:13:53,281 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-05-16 16:13:53,381 basehttp 124 "GET /image_codes/7af541b3-57ec-4610-a1b9-2408a5fc49ff/ HTTP/1.1" 400 63695
+ERROR 2018-05-16 16:16:40,994 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-05-16 16:16:41,065 basehttp 124 "GET / HTTP/1.1" 400 63186
+ERROR 2018-05-16 16:16:41,631 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-05-16 16:16:41,671 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 63271
+WARNING 2018-05-16 16:18:14,178 base 152 Not Found: /
+WARNING 2018-05-16 16:18:14,179 basehttp 124 "GET / HTTP/1.1" 404 2300
+WARNING 2018-05-16 16:18:14,252 base 152 Not Found: /favicon.ico
+WARNING 2018-05-16 16:18:14,253 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2351
+WARNING 2018-05-16 16:18:18,734 base 152 Not Found: /users/
+WARNING 2018-05-16 16:18:18,734 basehttp 124 "GET /users/ HTTP/1.1" 404 2336
+WARNING 2018-05-16 16:29:37,893 base 152 Not Found: /users/
+WARNING 2018-05-16 16:29:37,894 basehttp 124 "GET /users/ HTTP/1.1" 404 2898
+ERROR 2018-05-16 16:30:09,673 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 16:30:09,754 basehttp 124 "GET /users/ HTTP/1.1" 500 80849
+INFO 2018-05-16 16:30:58,048 basehttp 124 "GET /image_codes/32d4c468-e201-41d9-b66e-876d3cfed845/ HTTP/1.1" 200 2990
+INFO 2018-05-16 16:30:59,933 basehttp 124 "GET /image_codes/2358c950-6ded-4c4f-a95d-98ab8b9628c6/ HTTP/1.1" 200 3197
+INFO 2018-05-16 16:31:00,085 basehttp 124 "GET /image_codes/6d2c5076-edce-4bb3-af42-9c2ce3a44a97/ HTTP/1.1" 200 2496
+INFO 2018-05-16 16:31:00,247 basehttp 124 "GET /image_codes/b7f2ff37-bece-40e0-9ce4-6f1c47cc9f5c/ HTTP/1.1" 200 3197
+INFO 2018-05-16 17:54:14,120 basehttp 124 "GET /image_codes/95d69425-dfb9-4ed3-8cad-8b2126ac9719/ HTTP/1.1" 200 3583
+ERROR 2018-05-16 17:55:22,794 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 17:55:22,859 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 16504
+ERROR 2018-05-16 17:55:28,489 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 17:55:28,507 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 16512
+ERROR 2018-05-16 17:55:31,510 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 17:55:31,531 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 16512
+INFO 2018-05-16 17:55:31,601 basehttp 124 "GET /sms_codes/18811110000/?text=wffv&image_code_id=95d69425-dfb9-4ed3-8cad-8b2126ac9719 HTTP/1.1" 200 16
+INFO 2018-05-16 18:10:23,604 basehttp 124 "GET /image_codes/f62a2ef9-892a-471e-9da1-50819ac56c59/ HTTP/1.1" 200 2654
+ERROR 2018-05-16 18:10:26,368 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:10:26,437 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 16504
+ERROR 2018-05-16 18:10:31,941 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 18:10:31,959 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 16512
+ERROR 2018-05-16 18:10:36,885 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+WARNING 2018-05-16 18:10:36,893 basehttp 124 "GET /sms_codes/18811110000/?text=ockj&image_code_id=f62a2ef9-892a-471e-9da1-50819ac56c59 HTTP/1.1" 400 52
+ERROR 2018-05-16 18:10:36,907 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 16512
+INFO 2018-05-16 18:10:42,481 basehttp 124 "GET /image_codes/5f27fc55-e283-4c00-9e84-aafb9b98d56f/ HTTP/1.1" 200 3313
+ERROR 2018-05-16 18:10:46,308 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 18:10:46,327 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 16512
+INFO 2018-05-16 18:10:46,400 basehttp 124 "GET /sms_codes/18811110000/?text=mdza&image_code_id=5f27fc55-e283-4c00-9e84-aafb9b98d56f HTTP/1.1" 200 16
+INFO 2018-05-16 18:13:12,589 basehttp 124 "GET /image_codes/8d4c1cc8-775a-4346-aab8-bbcdaa9dc7f0/ HTTP/1.1" 200 3790
+ERROR 2018-05-16 18:13:16,061 exception 135 Internal Server Error: /usernames/pythhon/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:13:16,284 basehttp 124 "GET /usernames/pythhon/count/ HTTP/1.1" 500 17723
+ERROR 2018-05-16 18:13:22,882 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 18:13:22,982 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 17727
+ERROR 2018-05-16 18:13:28,414 exception 135 Internal Server Error: /usernames/pythhon/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:13:28,465 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 18:13:28,950 basehttp 124 "GET /usernames/pythhon/count/ HTTP/1.1" 500 17723
+ERROR 2018-05-16 18:13:28,954 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 17728
+INFO 2018-05-16 18:14:55,630 basehttp 124 "GET /sms_codes/18811110000/?text=xrwx&image_code_id=8d4c1cc8-775a-4346-aab8-bbcdaa9dc7f0 HTTP/1.1" 200 16
+INFO 2018-05-16 18:15:42,305 basehttp 124 "GET /image_codes/80420243-dce1-45a9-bb07-79d1ad06c8d8/ HTTP/1.1" 200 3095
+ERROR 2018-05-16 18:15:50,277 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:15:50,842 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+ERROR 2018-05-16 18:15:56,274 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 18:15:56,572 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 17727
+INFO 2018-05-16 18:18:21,422 basehttp 124 "GET /image_codes/0a8ea065-72db-45b0-bc10-2ab0dda7a70f/ HTTP/1.1" 200 3185
+INFO 2018-05-16 18:19:03,090 basehttp 124 "GET /image_codes/0b341674-2176-4465-8cdd-d2bfff6c679f/ HTTP/1.1" 200 3030
+INFO 2018-05-16 18:19:28,235 basehttp 124 "GET /image_codes/f140f3d3-ad18-4a95-9768-d3e37df87470/ HTTP/1.1" 200 3634
+INFO 2018-05-16 18:19:34,746 basehttp 124 "GET /image_codes/d0269204-e5b9-4e74-a800-79e6ffa6cdb6/ HTTP/1.1" 200 3162
+ERROR 2018-05-16 18:19:59,618 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:19:59,993 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+INFO 2018-05-16 18:20:30,780 basehttp 124 "GET /image_codes/a7cb175a-ae29-4f9d-bb0a-66ef5f90d115/ HTTP/1.1" 200 3169
+ERROR 2018-05-16 18:20:39,322 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:20:39,518 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+INFO 2018-05-16 18:22:07,733 basehttp 124 "GET /image_codes/680e602c-57fb-421c-92be-29ff872bf5be/ HTTP/1.1" 200 2957
+INFO 2018-05-16 18:25:53,344 basehttp 124 "GET /image_codes/49f3be11-51eb-41c7-944e-bcebae729674/ HTTP/1.1" 200 3168
+INFO 2018-05-16 18:26:16,581 basehttp 124 "GET /image_codes/291e80f5-7c8d-4e9b-97f2-2f198d494aa8/ HTTP/1.1" 200 3312
+ERROR 2018-05-16 18:26:21,399 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:26:21,631 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+ERROR 2018-05-16 18:27:05,817 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:27:05,989 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+WARNING 2018-05-16 18:27:39,193 base 152 Not Found: /
+WARNING 2018-05-16 18:27:39,197 basehttp 124 "GET / HTTP/1.1" 404 2844
+ERROR 2018-05-16 18:28:12,222 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:28:12,554 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 85250
+ERROR 2018-05-16 18:28:21,495 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-16 18:28:21,813 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 400 66001
+ERROR 2018-05-16 18:28:22,155 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-16 18:28:22,430 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 65849
+ERROR 2018-05-16 18:28:46,818 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:28:47,141 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 85250
+INFO 2018-05-16 18:31:19,718 basehttp 124 "GET /image_codes/b2fb8e16-3b3e-427a-b58e-ba0927048fa1/ HTTP/1.1" 200 3257
+INFO 2018-05-16 18:31:26,439 basehttp 124 "GET /image_codes/e922ddcc-525b-4f22-b6e8-0217f70c997a/ HTTP/1.1" 200 3129
+INFO 2018-05-16 18:31:39,006 basehttp 124 "GET /image_codes/eba72096-458c-40fb-b163-fe5f03ac8ec8/ HTTP/1.1" 200 3160
+ERROR 2018-05-16 18:32:06,496 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:32:06,767 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+ERROR 2018-05-16 18:34:08,579 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:34:08,730 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+ERROR 2018-05-16 18:35:15,408 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:35:15,512 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+ERROR 2018-05-16 18:35:20,055 exception 135 Internal Server Error: /mobiles/18811110000/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'mobile'
+ERROR 2018-05-16 18:35:20,167 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 500 17727
+INFO 2018-05-16 18:36:22,086 basehttp 124 "GET /image_codes/008f3fdf-8e95-47bf-8585-3d1e3969ce84/ HTTP/1.1" 200 3389
+INFO 2018-05-16 18:36:27,734 basehttp 124 "GET /image_codes/d0bb800a-1e5a-40f5-8965-4ab77f6f472c/ HTTP/1.1" 200 3410
+INFO 2018-05-16 18:36:34,976 basehttp 124 "GET /image_codes/a5a82dcf-30af-4bea-aa60-3f0f9566cd9a/ HTTP/1.1" 200 3376
+ERROR 2018-05-16 18:37:01,387 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:37:01,559 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+INFO 2018-05-16 18:37:46,599 basehttp 124 "GET /image_codes/c37c5a36-f037-42c0-934c-e3546da08e4b/ HTTP/1.1" 200 3196
+INFO 2018-05-16 18:39:17,096 basehttp 124 "GET /image_codes/58b64944-3aac-4abc-93ec-f4c3764c3e35/ HTTP/1.1" 200 3239
+ERROR 2018-05-16 18:39:24,023 exception 135 Internal Server Error: /usernames/python/count/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'username'
+ERROR 2018-05-16 18:39:24,240 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 500 17719
+INFO 2018-05-16 18:44:16,968 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:44:18,588 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:45:42,667 basehttp 124 "GET /image_codes/1371d023-c467-43f8-ab68-b0dacc8f3410/ HTTP/1.1" 200 3194
+INFO 2018-05-16 18:45:54,611 basehttp 124 "GET /image_codes/05c72200-8747-46d8-81f4-2e12c9a58a10/ HTTP/1.1" 200 3247
+INFO 2018-05-16 18:46:00,104 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:46:07,196 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:46:10,913 basehttp 124 "GET /image_codes/2e05f995-2521-4450-8260-a80ce3d36d80/ HTTP/1.1" 200 3026
+INFO 2018-05-16 18:46:18,468 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:46:18,545 basehttp 124 "GET /sms_codes/18811110000/?text=hvha&image_code_id=2e05f995-2521-4450-8260-a80ce3d36d80 HTTP/1.1" 200 16
+INFO 2018-05-16 18:46:49,263 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-05-16 18:46:49,280 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:46:49,280 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+ERROR 2018-05-16 18:46:49,284 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 997, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class CreateUserSerializer missing "Meta" attribute
+ERROR 2018-05-16 18:46:49,366 basehttp 124 "POST /users/ HTTP/1.1" 500 18114
+INFO 2018-05-16 18:48:53,922 basehttp 124 "GET /image_codes/60763446-81f1-440f-ae45-0ba906742bfe/ HTTP/1.1" 200 3307
+INFO 2018-05-16 18:49:01,663 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:49:07,846 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:49:10,040 basehttp 124 "GET /image_codes/831176ec-e1c3-4fb7-80d3-02cc1f9b0e50/ HTTP/1.1" 200 3243
+INFO 2018-05-16 18:49:10,998 basehttp 124 "GET /image_codes/fed0a7f6-7de6-4019-86fb-63c61652c367/ HTTP/1.1" 200 3448
+INFO 2018-05-16 18:49:11,911 basehttp 124 "GET /image_codes/5c25e3c9-ad4a-461c-9867-52d4bce6b55f/ HTTP/1.1" 200 3394
+INFO 2018-05-16 18:49:16,668 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:49:16,734 basehttp 124 "GET /sms_codes/18811110000/?text=fymg&image_code_id=5c25e3c9-ad4a-461c-9867-52d4bce6b55f HTTP/1.1" 200 16
+INFO 2018-05-16 18:49:29,440 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:49:29,443 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 18:49:29,451 basehttp 124 "POST /users/ HTTP/1.1" 400 35
+INFO 2018-05-16 18:49:40,658 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:49:40,667 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+WARNING 2018-05-16 18:49:40,669 basehttp 124 "POST /users/ HTTP/1.1" 400 35
+INFO 2018-05-16 18:50:30,706 basehttp 124 "GET /image_codes/165e3c15-c1be-4c6c-8a7e-2e5685049f26/ HTTP/1.1" 200 3340
+INFO 2018-05-16 18:50:34,252 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:50:42,232 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:50:47,707 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:50:47,765 basehttp 124 "GET /sms_codes/18811110000/?text=7rkn&image_code_id=165e3c15-c1be-4c6c-8a7e-2e5685049f26 HTTP/1.1" 200 16
+INFO 2018-05-16 18:50:59,011 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 18:50:59,011 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+WARNING 2018-05-16 18:50:59,016 basehttp 124 "POST /users/ HTTP/1.1" 400 49
+INFO 2018-05-16 18:51:32,329 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 18:51:32,337 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 18:51:32,358 basehttp 124 "POST /users/ HTTP/1.1" 400 49
+INFO 2018-05-16 18:51:32,453 basehttp 124 "GET /image_codes/a7cb3af6-067b-4cde-8d8a-109e17a66a96/ HTTP/1.1" 200 2970
+INFO 2018-05-16 18:51:44,782 basehttp 124 "GET /image_codes/2af080ce-5e06-456a-bead-5967c0eccb1c/ HTTP/1.1" 200 2987
+INFO 2018-05-16 19:24:31,333 basehttp 124 "GET /image_codes/3b32e960-9fb3-4bb0-baea-6131a9b8dbe1/ HTTP/1.1" 200 3157
+INFO 2018-05-16 19:24:34,464 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:24:41,053 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:24:45,315 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:25:15,533 basehttp 124 "GET /sms_codes/18811110000/?text=ahtb&image_code_id=3b32e960-9fb3-4bb0-baea-6131a9b8dbe1 HTTP/1.1" 200 16
+INFO 2018-05-16 19:25:33,922 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:25:33,928 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 19:25:57,065 basehttp 124 "POST /users/ HTTP/1.1" 400 49
+INFO 2018-05-16 19:26:01,300 basehttp 124 "GET /image_codes/d6830f23-8069-4b94-ac60-80ab749a3292/ HTTP/1.1" 200 2954
+INFO 2018-05-16 19:26:05,736 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:26:10,593 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:26:13,267 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:27:57,256 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-05-16 19:27:57,363 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:27:57,380 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:36:20,351 basehttp 124 "GET /image_codes/d61eb481-330c-4b89-8192-efce6a65adea/ HTTP/1.1" 200 3114
+WARNING 2018-05-16 19:36:23,928 basehttp 124 "POST /users/ HTTP/1.1" 400 49
+INFO 2018-05-16 19:36:23,953 basehttp 124 "GET /sms_codes/18811110000/?text=rahu&image_code_id=d6830f23-8069-4b94-ac60-80ab749a3292 HTTP/1.1" 200 16
+INFO 2018-05-16 19:36:26,580 basehttp 124 "GET /image_codes/ec9981cb-94c5-49e5-9a8f-bb543d8ebcdd/ HTTP/1.1" 200 3470
+INFO 2018-05-16 19:36:28,645 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:36:33,677 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:36:39,442 basehttp 124 "GET /image_codes/32e412ba-35a8-4364-8f13-58f3ab3547fc/ HTTP/1.1" 200 3010
+INFO 2018-05-16 19:36:40,284 basehttp 124 "GET /image_codes/2fa2ad8f-dd41-41f5-aec7-674356ad3fce/ HTTP/1.1" 200 3155
+INFO 2018-05-16 19:36:59,810 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:18,796 basehttp 124 "GET /sms_codes/18811110000/?text=am3y&image_code_id=2fa2ad8f-dd41-41f5-aec7-674356ad3fce HTTP/1.1" 200 16
+INFO 2018-05-16 19:37:36,990 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:36,995 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:42,123 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:42,136 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:43,012 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:43,027 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:43,196 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:43,216 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:43,356 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:43,369 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:43,515 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:43,538 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:43,689 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:43,705 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:43,873 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:43,888 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:44,052 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:44,074 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:37:44,214 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:37:44,230 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:38:13,834 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:38:13,841 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:38:46,411 basehttp 124 "GET /image_codes/69b1e8e1-77ed-4180-9f47-279e350e6284/ HTTP/1.1" 200 2682
+INFO 2018-05-16 19:38:53,381 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:39:00,064 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:39:03,019 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:39:03,074 basehttp 124 "GET /sms_codes/18811110000/?text=mtlk&image_code_id=69b1e8e1-77ed-4180-9f47-279e350e6284 HTTP/1.1" 200 16
+INFO 2018-05-16 19:39:22,021 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-05-16 19:39:22,050 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:39:22,053 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 19:39:22,059 basehttp 124 "POST /users/ HTTP/1.1" 400 49
+INFO 2018-05-16 19:39:58,088 basehttp 124 "GET /image_codes/81f15470-1545-468e-a12f-ffb055fe9925/ HTTP/1.1" 200 3267
+INFO 2018-05-16 19:40:00,678 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:40:06,554 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:40:08,975 basehttp 124 "GET /image_codes/e76ba153-457a-4487-9ee8-79ee41373581/ HTTP/1.1" 200 2925
+INFO 2018-05-16 19:40:14,259 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:40:14,419 basehttp 124 "GET /sms_codes/18811110000/?text=pzxk&image_code_id=e76ba153-457a-4487-9ee8-79ee41373581 HTTP/1.1" 200 16
+INFO 2018-05-16 19:40:31,102 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:40:31,118 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:43:07,994 basehttp 124 "GET /image_codes/22f5609c-fa70-496c-a93c-9cfdceb13165/ HTTP/1.1" 200 3032
+INFO 2018-05-16 19:43:11,763 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:43:17,024 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:43:19,737 basehttp 124 "GET /image_codes/1301c615-e4d1-4ed4-b86b-c4d461e7d607/ HTTP/1.1" 200 2839
+INFO 2018-05-16 19:43:23,467 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:43:23,669 basehttp 124 "GET /sms_codes/18811110000/?text=ucxn&image_code_id=1301c615-e4d1-4ed4-b86b-c4d461e7d607 HTTP/1.1" 200 16
+INFO 2018-05-16 19:44:15,177 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:44:16,181 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:46:16,814 basehttp 124 "GET /image_codes/ca0f7c9d-b011-4f4d-824e-bbac516e6ac8/ HTTP/1.1" 200 3298
+INFO 2018-05-16 19:46:19,260 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:46:26,649 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:46:32,524 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:46:32,858 basehttp 124 "GET /sms_codes/18811110000/?text=theh&image_code_id=ca0f7c9d-b011-4f4d-824e-bbac516e6ac8 HTTP/1.1" 200 16
+INFO 2018-05-16 19:46:43,747 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:46:43,772 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:47:55,541 basehttp 124 "GET /image_codes/fcfca66b-5493-4124-857e-0572a34dc1ec/ HTTP/1.1" 200 3155
+INFO 2018-05-16 19:47:59,313 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:48:04,482 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:48:08,471 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:48:08,659 basehttp 124 "GET /sms_codes/18811110000/?text=oblj&image_code_id=fcfca66b-5493-4124-857e-0572a34dc1ec HTTP/1.1" 200 16
+INFO 2018-05-16 19:48:18,998 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:48:19,011 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 19:48:19,023 basehttp 124 "POST /users/ HTTP/1.1" 400 42
+INFO 2018-05-16 19:48:32,760 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 19:48:32,781 basehttp 124 "POST /users/ HTTP/1.1" 400 42
+INFO 2018-05-16 19:48:32,797 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:48:51,711 basehttp 124 "GET /image_codes/8387ce66-5c79-4248-935b-4a6c5f463e10/ HTTP/1.1" 200 3057
+INFO 2018-05-16 19:48:55,021 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:49:00,879 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:49:04,552 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 19:49:04,563 basehttp 124 "GET /sms_codes/18811110000/?text=8cq6&image_code_id=8387ce66-5c79-4248-935b-4a6c5f463e10 HTTP/1.1" 400 52
+ERROR 2018-05-16 19:49:12,960 exception 135 Internal Server Error: /sms_codes/18811110000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 49, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 17, in validate
+    real_image_code = real_image_code.decode()
+AttributeError: 'NoneType' object has no attribute 'decode'
+INFO 2018-05-16 19:49:12,983 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+ERROR 2018-05-16 19:49:13,213 basehttp 124 "GET /sms_codes/18811110000/?text=8uq6&image_code_id=8387ce66-5c79-4248-935b-4a6c5f463e10 HTTP/1.1" 500 18631
+INFO 2018-05-16 19:50:02,486 basehttp 124 "GET /image_codes/f4980fe1-d749-4968-ac41-e51cc8713a2d/ HTTP/1.1" 200 3460
+INFO 2018-05-16 19:50:06,654 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:50:11,981 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:50:17,215 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:50:17,447 basehttp 124 "GET /sms_codes/18811110000/?text=nt5v&image_code_id=f4980fe1-d749-4968-ac41-e51cc8713a2d HTTP/1.1" 200 16
+INFO 2018-05-16 19:50:25,478 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-05-16 19:50:25,545 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:50:25,576 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+WARNING 2018-05-16 19:50:37,943 basehttp 124 "POST /users/ HTTP/1.1" 400 49
+INFO 2018-05-16 19:52:16,180 basehttp 124 "GET /image_codes/f2d2d879-615d-48f2-8a39-c521d9747874/ HTTP/1.1" 200 3140
+INFO 2018-05-16 19:52:21,438 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:52:26,265 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:52:31,418 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:52:31,697 basehttp 124 "GET /sms_codes/18811110000/?text=blki&image_code_id=f2d2d879-615d-48f2-8a39-c521d9747874 HTTP/1.1" 200 16
+INFO 2018-05-16 19:52:44,943 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 19:52:44,958 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 19:59:58,528 basehttp 124 "GET /image_codes/073f7d35-8ff2-48eb-b120-fe45d0640f1d/ HTTP/1.1" 200 3014
+INFO 2018-05-16 20:00:07,012 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 20:00:12,019 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:00:18,017 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:00:18,233 basehttp 124 "GET /sms_codes/18811110000/?text=lpkw&image_code_id=073f7d35-8ff2-48eb-b120-fe45d0640f1d HTTP/1.1" 200 16
+INFO 2018-05-16 20:00:31,800 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-05-16 20:00:31,917 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:00:31,919 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 20:00:36,764 basehttp 124 "POST /users/ HTTP/1.1" 201 225
+INFO 2018-05-16 20:02:15,011 basehttp 124 "GET /image_codes/98753c7a-7d65-4f1c-aeda-dcac9fb6fd6a/ HTTP/1.1" 200 3579
+INFO 2018-05-16 20:02:18,247 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 20:02:23,403 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2018-05-16 20:02:26,387 basehttp 124 "GET /usernames/python1/count/ HTTP/1.1" 200 32
+INFO 2018-05-16 20:02:33,395 basehttp 124 "GET /mobiles/18811110000/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:02:37,440 basehttp 124 "GET /mobiles/18811111111/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:02:41,849 basehttp 124 "GET /sms_codes/18811111111/?text=wbqy&image_code_id=98753c7a-7d65-4f1c-aeda-dcac9fb6fd6a HTTP/1.1" 200 16
+INFO 2018-05-16 20:02:41,870 basehttp 124 "GET /mobiles/18811111111/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:02:57,424 basehttp 124 "GET /usernames/python1/count/ HTTP/1.1" 200 32
+INFO 2018-05-16 20:02:57,430 basehttp 124 "GET /mobiles/18811111111/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:03:17,175 basehttp 124 "POST /users/ HTTP/1.1" 201 227
+INFO 2018-05-16 20:04:26,200 basehttp 124 "GET /image_codes/1a8b83d4-aaa9-4d4f-ac39-6bfe19b670cc/ HTTP/1.1" 200 3065
+INFO 2018-05-16 20:04:31,295 basehttp 124 "GET /image_codes/759fc1ac-b310-44d0-85d6-af3d9f87ced3/ HTTP/1.1" 200 3182
+INFO 2018-05-16 20:06:27,016 basehttp 124 "GET /usernames/python2/count/ HTTP/1.1" 200 32
+INFO 2018-05-16 20:06:32,871 basehttp 124 "GET /mobiles/18811112222/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:06:36,387 basehttp 124 "GET /mobiles/18811112222/count/ HTTP/1.1" 200 34
+WARNING 2018-05-16 20:06:36,397 basehttp 124 "GET /sms_codes/18811112222/?text=8lav&image_code_id=759fc1ac-b310-44d0-85d6-af3d9f87ced3 HTTP/1.1" 400 52
+ERROR 2018-05-16 20:06:43,591 exception 135 Internal Server Error: /sms_codes/18811112222/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/views.py", line 49, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 17, in validate
+    real_image_code = real_image_code.decode()
+AttributeError: 'NoneType' object has no attribute 'decode'
+INFO 2018-05-16 20:06:43,615 basehttp 124 "GET /mobiles/18811112222/count/ HTTP/1.1" 200 34
+ERROR 2018-05-16 20:06:43,827 basehttp 124 "GET /sms_codes/18811112222/?text=slav&image_code_id=759fc1ac-b310-44d0-85d6-af3d9f87ced3 HTTP/1.1" 500 18631
+INFO 2018-05-16 20:07:02,011 basehttp 124 "GET /image_codes/88366c8c-1c64-4191-89cc-793ef6278e25/ HTTP/1.1" 200 3148
+INFO 2018-05-16 20:07:06,894 basehttp 124 "GET /usernames/python2/count/ HTTP/1.1" 200 32
+INFO 2018-05-16 20:07:13,132 basehttp 124 "GET /mobiles/18811112222/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:07:16,335 basehttp 124 "GET /sms_codes/18811112222/?text=suah&image_code_id=88366c8c-1c64-4191-89cc-793ef6278e25 HTTP/1.1" 200 16
+INFO 2018-05-16 20:07:16,352 basehttp 124 "GET /mobiles/18811112222/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:07:22,083 basehttp 124 "GET /usernames/python2/count/ HTTP/1.1" 200 32
+INFO 2018-05-16 20:07:22,093 basehttp 124 "GET /mobiles/18811112222/count/ HTTP/1.1" 200 34
+INFO 2018-05-16 20:07:26,100 basehttp 124 "POST /users/ HTTP/1.1" 201 227
+ERROR 2018-05-16 22:40:28,344 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:40:28,428 basehttp 124 "GET /authorizations/ HTTP/1.1" 500 81545
+WARNING 2018-05-16 22:40:49,208 base 152 Not Found: /
+WARNING 2018-05-16 22:40:49,208 basehttp 124 "GET / HTTP/1.1" 404 3009
+WARNING 2018-05-16 22:46:15,281 base 152 Not Found: /
+WARNING 2018-05-16 22:46:15,282 basehttp 124 "GET / HTTP/1.1" 404 3009
+INFO 2018-05-16 22:46:20,083 basehttp 124 "GET /users HTTP/1.1" 301 0
+ERROR 2018-05-16 22:46:20,099 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:46:20,211 basehttp 124 "GET /users/ HTTP/1.1" 500 81153
+ERROR 2018-05-16 22:46:27,868 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:46:27,955 basehttp 124 "GET /authorizations/ HTTP/1.1" 500 81375
+ERROR 2018-05-16 22:47:51,353 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:47:51,415 basehttp 124 "GET /authorizations/ HTTP/1.1" 500 81510
+WARNING 2018-05-16 22:54:00,431 base 152 Not Found: /
+WARNING 2018-05-16 22:54:00,433 basehttp 124 "GET / HTTP/1.1" 404 3009
+ERROR 2018-05-16 22:54:12,593 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:54:12,712 basehttp 124 "GET /users/ HTTP/1.1" 500 81188
+ERROR 2018-05-16 22:57:34,035 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:34,102 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:34,938 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:34,997 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:35,198 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:35,263 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:35,300 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:35,363 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:35,447 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:35,514 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:35,690 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:35,787 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:35,837 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:35,893 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:35,983 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:36,043 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:36,204 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:36,266 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:36,299 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:36,360 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:36,526 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:36,587 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:36,644 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:36,705 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+ERROR 2018-05-16 22:57:36,787 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2018-05-16 22:57:36,845 basehttp 124 "GET /users/ HTTP/1.1" 500 81323
+WARNING 2018-05-16 23:05:31,788 basehttp 124 "GET /users/ HTTP/1.1" 405 8583
+INFO 2018-05-16 23:05:31,851 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-05-16 23:05:31,854 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-05-16 23:05:31,852 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-05-16 23:05:31,855 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-05-16 23:05:31,853 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-05-16 23:05:31,860 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-05-16 23:05:31,872 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-05-16 23:05:31,872 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-05-16 23:05:31,873 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-05-16 23:05:31,878 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+INFO 2018-05-16 23:05:31,958 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-05-16 23:05:32,052 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+WARNING 2018-05-16 23:06:52,428 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7581
+WARNING 2018-05-16 23:06:53,098 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+WARNING 2018-05-16 23:07:10,350 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7624
+WARNING 2018-05-16 23:07:10,545 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+INFO 2018-05-16 23:07:29,425 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7696
+WARNING 2018-05-16 23:07:29,671 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+WARNING 2018-05-16 23:40:12,952 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7581
+WARNING 2018-05-16 23:40:13,159 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+ERROR 2018-05-16 23:40:27,166 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'users.utils' has no attribute 'UsernameMobileAuthBackend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 23, in load_backend
+    return import_string(path)()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/module_loading.py", line 27, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+ImportError: Module "users.utils" does not define a "UsernameMobileAuthBackend" attribute/class
+ERROR 2018-05-16 23:40:27,315 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 131614
+WARNING 2018-05-16 23:42:59,080 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7581
+WARNING 2018-05-16 23:42:59,299 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+ERROR 2018-05-16 23:43:09,687 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'users.utils' has no attribute 'UsernameMobileAuthBackend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 29, in _get_backends
+    backend = load_backend(backend_path)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 23, in load_backend
+    return import_string(path)()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/module_loading.py", line 27, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+ImportError: Module "users.utils" does not define a "UsernameMobileAuthBackend" attribute/class
+ERROR 2018-05-16 23:43:09,858 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 131614
+WARNING 2018-05-16 23:45:30,063 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7581
+WARNING 2018-05-16 23:45:30,204 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+ERROR 2018-05-16 23:45:41,567 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 70, in authenticate
+    user = _authenticate_with_backend(backend, backend_path, request, credentials)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 116, in _authenticate_with_backend
+    return backend.authenticate(*args, **credentials)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/users/utils.py", line 32, in authenticate
+    user = get_user_by_account(username)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/users/utils.py", line 27, in get_user_by_account
+    return user
+UnboundLocalError: local variable 'user' referenced before assignment
+ERROR 2018-05-16 23:45:41,709 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 118271
+WARNING 2018-05-16 23:50:44,285 basehttp 124 "GET /authorizations/ HTTP/1.1" 405 7581
+WARNING 2018-05-16 23:50:44,458 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+INFO 2018-05-16 23:50:58,807 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7770
+WARNING 2018-05-16 23:50:58,888 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+WARNING 2018-05-16 23:51:07,025 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 7617
+WARNING 2018-05-16 23:51:07,189 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+INFO 2018-05-16 23:51:18,991 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7770
+WARNING 2018-05-16 23:51:19,192 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
