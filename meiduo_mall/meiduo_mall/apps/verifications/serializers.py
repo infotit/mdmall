@@ -24,11 +24,12 @@ class CheckImageCodeSerializer(serializers.Serializer):
         if text.lower() != real_image_code.lower():
             raise serializers.ValidationError('图片验证码输入错误')
 
-        mobile = self.context['view'].kwargs['mobile']
-        send_flag = redis_conn.get('send_flag_%s' % mobile)
+        mobile = self.context['view'].kwargs.get('mobile')
+        if mobile:
+            send_flag = redis_conn.get('send_flag_%s' % mobile)
 
-        if send_flag:
-            raise serializers.ValidationError('发送短信次数过于频繁')
+            if send_flag:
+                raise serializers.ValidationError('发送短信次数过于频繁')
 
         return attrs
 

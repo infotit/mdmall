@@ -2180,3 +2180,19 @@ WARNING 2018-05-16 23:51:07,025 basehttp 124 "POST /authorizations/ HTTP/1.1" 40
 WARNING 2018-05-16 23:51:07,189 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
 INFO 2018-05-16 23:51:18,991 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 7770
 WARNING 2018-05-16 23:51:19,192 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+WARNING 2018-05-17 14:58:35,239 base 152 Not Found: /find_password.html
+WARNING 2018-05-17 14:58:35,241 basehttp 124 "GET /find_password.html HTTP/1.1" 404 3278
+ERROR 2018-05-17 15:00:00,258 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-17 15:00:00,478 basehttp 124 "GET / HTTP/1.1" 400 64250
+ERROR 2018-05-17 15:00:01,064 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-17 15:00:01,127 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 64328
+INFO 2018-05-17 15:11:03,732 basehttp 124 "GET /image_codes/09d12eb0-d39b-43be-990e-4c4baefd6cea/ HTTP/1.1" 200 3249
+INFO 2018-05-17 15:13:02,410 basehttp 124 "GET /image_codes/90764585-5282-4f32-bed4-3f7768163ea1/ HTTP/1.1" 200 3027
+INFO 2018-05-17 15:13:03,215 basehttp 124 "GET /image_codes/fe33a519-e3a3-48a4-ae39-545e45eb6a70/ HTTP/1.1" 200 3264
+INFO 2018-05-17 15:13:04,188 basehttp 124 "GET /image_codes/2646a6c4-e1f6-4558-aab4-b89f88f3b9ef/ HTTP/1.1" 200 2794
+INFO 2018-05-17 15:13:11,437 basehttp 124 "GET /accounts/python/sms/token/?text=yuhq&image_code_id=2646a6c4-e1f6-4558-aab4-b89f88f3b9ef HTTP/1.1" 200 185
+INFO 2018-05-17 15:15:42,555 basehttp 124 "GET /image_codes/b81f8b0d-5f1d-46f7-a706-ca2868281d30/ HTTP/1.1" 200 3349
+INFO 2018-05-17 15:16:47,588 basehttp 124 "GET /image_codes/d13ef67a-fe88-4a04-b8f4-c7f6e5591f35/ HTTP/1.1" 200 3389
+INFO 2018-05-17 15:17:14,854 basehttp 124 "GET /image_codes/f162c9e4-61f5-4e38-aafb-3457a27882f8/ HTTP/1.1" 200 3095
+INFO 2018-05-17 15:17:31,478 basehttp 124 "GET /image_codes/25cf613a-cdc6-4d62-9542-61a5c6c1e572/ HTTP/1.1" 200 3446
+INFO 2018-05-17 15:18:07,670 basehttp 124 "GET /accounts/python1/sms/token/?text=lygf&image_code_id=25cf613a-cdc6-4d62-9542-61a5c6c1e572 HTTP/1.1" 200 185
