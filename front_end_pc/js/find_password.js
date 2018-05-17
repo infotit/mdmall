@@ -163,7 +163,32 @@ var vm = new Vue({
         },
         // 第二步表单提交，验证手机号，获取修改密码的access_token
         form_2_on_submit: function(){
-
+            this.check_sms_code();
+            if (this.error_sms_code == false) {
+                axios.get(this.host + '/accounts/' + this.username + '/password/token/?sms_code=' + this.sms_code, {
+                        responseType: 'json'
+                    })
+                    .then(response => {
+                        this.user_id = response.data.user_id;
+                        this.access_token = response.data.access_token;
+                        this.step_class['step-3'] = true;
+                        this.step_class['step-2'] = false;
+                        this.is_show_form_2 = false;
+                        this.is_show_form_3 = true;
+                    })
+                    .catch(error => {
+                        if (error.response.status == 400) {
+                            this.error_sms_code_message = '验证码错误';
+                            this.error_sms_code = true;
+                        } else if(error.response.status == 404){
+                            this.error_sms_code_message = '手机号不存在';
+                            this.error_sms_code = true;
+                        } else {
+                            alert(error.response.data.message);
+                            console.log(error.response.data);
+                        }
+                    })
+            }
         },
 
         // 第三步

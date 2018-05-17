@@ -2196,3 +2196,112 @@ INFO 2018-05-17 15:16:47,588 basehttp 124 "GET /image_codes/d13ef67a-fe88-4a04-b
 INFO 2018-05-17 15:17:14,854 basehttp 124 "GET /image_codes/f162c9e4-61f5-4e38-aafb-3457a27882f8/ HTTP/1.1" 200 3095
 INFO 2018-05-17 15:17:31,478 basehttp 124 "GET /image_codes/25cf613a-cdc6-4d62-9542-61a5c6c1e572/ HTTP/1.1" 200 3446
 INFO 2018-05-17 15:18:07,670 basehttp 124 "GET /accounts/python1/sms/token/?text=lygf&image_code_id=25cf613a-cdc6-4d62-9542-61a5c6c1e572 HTTP/1.1" 200 185
+INFO 2018-05-17 15:50:08,324 basehttp 124 "GET /image_codes/195bfe7d-1e52-4760-9485-7e7acd1752d9/ HTTP/1.1" 200 3155
+INFO 2018-05-17 15:50:16,549 basehttp 124 "GET /image_codes/aa1db420-caa3-4fd6-bfc3-3be5fe5dcd25/ HTTP/1.1" 200 3161
+INFO 2018-05-17 15:50:30,096 basehttp 124 "GET /image_codes/7cf7bb3f-68ae-4f7f-82a9-3f9c5994b32a/ HTTP/1.1" 200 3020
+INFO 2018-05-17 15:50:38,475 basehttp 124 "GET /image_codes/5e6c2336-9f1f-4132-975d-61a9023e8c50/ HTTP/1.1" 200 2670
+INFO 2018-05-17 15:50:43,978 basehttp 124 "GET /accounts/python/sms/token/?text=bcig&image_code_id=5e6c2336-9f1f-4132-975d-61a9023e8c50 HTTP/1.1" 200 185
+INFO 2018-05-17 15:50:46,566 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0MzQ0MywiZXhwIjoxNTI2NTQzNzQzfQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.imIWlwaeJgf7gtx0U-R8KbKcAsXT3oSf41_lwhwK070 HTTP/1.1" 200 16
+INFO 2018-05-17 15:52:23,413 basehttp 124 "GET /image_codes/d78b8004-8acd-4155-a75c-63b781fac289/ HTTP/1.1" 200 3203
+INFO 2018-05-17 15:52:27,690 basehttp 124 "GET /image_codes/34336391-4d9e-482f-8782-29d9465f0a04/ HTTP/1.1" 200 2954
+INFO 2018-05-17 15:52:36,276 basehttp 124 "GET /image_codes/ee256ff9-e74c-41d6-81c5-abbd80a46a3e/ HTTP/1.1" 200 2966
+INFO 2018-05-17 15:52:45,405 basehttp 124 "GET /image_codes/7d5ae586-8de4-4e94-b0a1-5e1bd936b477/ HTTP/1.1" 200 3625
+INFO 2018-05-17 15:52:54,716 basehttp 124 "GET /usernames/python3/count/ HTTP/1.1" 200 32
+INFO 2018-05-17 15:53:01,042 basehttp 124 "GET /mobiles/18811113333/count/ HTTP/1.1" 200 34
+INFO 2018-05-17 15:53:05,963 basehttp 124 "GET /sms_codes/18811113333/?text=q7wy&image_code_id=7d5ae586-8de4-4e94-b0a1-5e1bd936b477 HTTP/1.1" 200 16
+INFO 2018-05-17 15:53:05,975 basehttp 124 "GET /mobiles/18811113333/count/ HTTP/1.1" 200 34
+INFO 2018-05-17 15:58:55,996 basehttp 124 "GET /image_codes/64374b5c-c0e9-42cb-ad98-a6ed31a938b4/ HTTP/1.1" 200 3595
+INFO 2018-05-17 15:58:57,225 basehttp 124 "GET /image_codes/c13c495c-b0d1-4d92-9323-dad66c496d80/ HTTP/1.1" 200 3838
+INFO 2018-05-17 15:59:09,116 basehttp 124 "GET /accounts/python/sms/token/?text=vhxf&image_code_id=c13c495c-b0d1-4d92-9323-dad66c496d80 HTTP/1.1" 200 185
+ERROR 2018-05-17 15:59:12,126 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-17 15:59:12,226 basehttp 124 "GET / HTTP/1.1" 400 64250
+ERROR 2018-05-17 15:59:12,567 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-17 15:59:12,626 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 64328
+INFO 2018-05-17 15:59:15,975 basehttp 124 "GET /image_codes/7072b38f-64f6-4d87-9876-46bc9dd3a8b7/ HTTP/1.1" 200 3254
+ERROR 2018-05-17 15:59:18,373 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-17 15:59:18,419 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 64328
+INFO 2018-05-17 15:59:25,125 basehttp 124 "GET /image_codes/ef17d175-5560-491e-8cdd-70e0f515e29e/ HTTP/1.1" 200 3096
+INFO 2018-05-17 16:30:35,376 basehttp 124 "GET /image_codes/d882edf9-efd2-4b75-8a98-dc8c5dbb2ee2/ HTTP/1.1" 200 3172
+INFO 2018-05-17 16:31:58,049 basehttp 124 "GET /image_codes/08e06259-2068-4ea9-8856-1ee306aee54b/ HTTP/1.1" 200 3064
+INFO 2018-05-17 16:32:29,747 basehttp 124 "GET /image_codes/6657ba4a-daff-4b46-9175-15353a88386e/ HTTP/1.1" 200 3154
+INFO 2018-05-17 16:32:39,340 basehttp 124 "GET /accounts/python/sms/token/?text=zwtp&image_code_id=6657ba4a-daff-4b46-9175-15353a88386e HTTP/1.1" 200 185
+INFO 2018-05-17 16:32:40,971 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0NTk1OSwiZXhwIjoxNTI2NTQ2MjU5fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.HB8E3JhhSk0kL40remmS8kxQ-fhfx0rxw6GlB97pkzQ HTTP/1.1" 200 16
+WARNING 2018-05-17 16:32:49,865 basehttp 124 "GET /accounts/python/password/token/?sms_code=335643 HTTP/1.1" 400 41
+INFO 2018-05-17 16:32:58,949 basehttp 124 "GET /image_codes/c69b199b-0c98-4ec1-9034-648de3046541/ HTTP/1.1" 200 3194
+INFO 2018-05-17 16:33:04,293 basehttp 124 "GET /image_codes/179cf85d-554f-429d-a7eb-0470dad6382d/ HTTP/1.1" 200 2968
+INFO 2018-05-17 16:33:06,552 basehttp 124 "GET /image_codes/1907f857-7838-4460-9310-a8fa9dc89f35/ HTTP/1.1" 200 3338
+WARNING 2018-05-17 16:33:11,952 basehttp 124 "GET /accounts/python/sms/token/?text=dbug&image_code_id=1907f857-7838-4460-9310-a8fa9dc89f35 HTTP/1.1" 400 52
+ERROR 2018-05-17 16:33:19,254 exception 135 Internal Server Error: /accounts/python/sms/token/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/users/views.py", line 49, in get
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/verifications/serializers.py", line 17, in validate
+    real_image_code = real_image_code.decode()
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2018-05-17 16:33:19,327 basehttp 124 "GET /accounts/python/sms/token/?text=cbug&image_code_id=1907f857-7838-4460-9310-a8fa9dc89f35 HTTP/1.1" 500 17525
+INFO 2018-05-17 16:33:24,865 basehttp 124 "GET /image_codes/b35f7d5b-e461-489d-a1ce-79bb7179746d/ HTTP/1.1" 200 3301
+INFO 2018-05-17 16:34:11,930 basehttp 124 "GET /image_codes/41ed8e11-f477-4b53-90ee-e53ed3c4b104/ HTTP/1.1" 200 3238
+INFO 2018-05-17 16:34:19,306 basehttp 124 "GET /accounts/python/sms/token/?text=jyqd&image_code_id=41ed8e11-f477-4b53-90ee-e53ed3c4b104 HTTP/1.1" 200 185
+INFO 2018-05-17 16:34:20,623 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0NjA1OSwiZXhwIjoxNTI2NTQ2MzU5fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.Gozdg3bMnHwc6vAzA57Eu1P6dFXnrziL4E6BYxs2J1o HTTP/1.1" 200 16
+WARNING 2018-05-17 16:34:25,627 basehttp 124 "GET /accounts/python/password/token/?sms_code=032468 HTTP/1.1" 400 41
+INFO 2018-05-17 16:37:39,262 basehttp 124 "GET /image_codes/6b3ec01c-5433-48a1-a29d-da9655cfa5e1/ HTTP/1.1" 200 3224
+INFO 2018-05-17 16:37:49,169 basehttp 124 "GET /accounts/python/sms/token/?text=xcgo&image_code_id=6b3ec01c-5433-48a1-a29d-da9655cfa5e1 HTTP/1.1" 200 185
+INFO 2018-05-17 16:37:50,422 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0NjI2OSwiZXhwIjoxNTI2NTQ2NTY5fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.UmY695VFMGFxOtys4m9W3_4lbBBFf_uZSGeAMGcdv3U HTTP/1.1" 200 16
+INFO 2018-05-17 16:40:22,651 basehttp 124 "GET /image_codes/de78f187-8d27-4654-9390-8b4f060f1b4a/ HTTP/1.1" 200 2971
+INFO 2018-05-17 16:40:29,247 basehttp 124 "GET /accounts/python/sms/token/?text=cxie&image_code_id=de78f187-8d27-4654-9390-8b4f060f1b4a HTTP/1.1" 200 185
+INFO 2018-05-17 16:40:30,161 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0NjQyOSwiZXhwIjoxNTI2NTQ2NzI5fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.1ozlWQ2_l8QsOXc2-VnbCodeDe9gRiwPW3rQq85MF2w HTTP/1.1" 200 16
+WARNING 2018-05-17 16:40:55,481 basehttp 124 "GET /accounts/python/password/token/?sms_code=991719 HTTP/1.1" 400 41
+INFO 2018-05-17 17:07:30,842 basehttp 124 "GET /image_codes/526a7faa-d106-4fc8-b73b-4168882cd084/ HTTP/1.1" 200 3140
+INFO 2018-05-17 17:07:32,260 basehttp 124 "GET /image_codes/17d64d2f-40b1-45e6-a83a-8bb3a9bc2f26/ HTTP/1.1" 200 3440
+INFO 2018-05-17 17:07:33,678 basehttp 124 "GET /image_codes/f3bb19c8-dac1-4f58-bcf0-d976c2d99b95/ HTTP/1.1" 200 2912
+INFO 2018-05-17 17:07:39,526 basehttp 124 "GET /accounts/python/sms/token/?text=sd3o&image_code_id=f3bb19c8-dac1-4f58-bcf0-d976c2d99b95 HTTP/1.1" 200 185
+INFO 2018-05-17 17:07:40,922 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0ODA1OSwiZXhwIjoxNTI2NTQ4MzU5fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.FHW_wqwQAtypRPNNKbYOHOddKWG-3jLXjPvYOmyWOng HTTP/1.1" 200 16
+INFO 2018-05-17 17:08:56,281 basehttp 124 "GET /image_codes/b54dbd33-5d9b-4e65-8b8a-8c09c5a1172c/ HTTP/1.1" 200 2817
+INFO 2018-05-17 17:09:02,262 basehttp 124 "GET /accounts/python/sms/token/?text=jnjt&image_code_id=b54dbd33-5d9b-4e65-8b8a-8c09c5a1172c HTTP/1.1" 200 185
+INFO 2018-05-17 17:09:03,203 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0ODE0MiwiZXhwIjoxNTI2NTQ4NDQyfQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.La-f3B5F8mGa6IoSHzRumiVVKpLSgeImjETWfkFXrWs HTTP/1.1" 200 16
+INFO 2018-05-17 17:09:51,946 basehttp 124 "GET /image_codes/c0b90d1c-40f4-4f17-9af3-4b8bf562d11c/ HTTP/1.1" 200 3413
+INFO 2018-05-17 17:09:57,941 basehttp 124 "GET /accounts/python/sms/token/?text=weaz&image_code_id=c0b90d1c-40f4-4f17-9af3-4b8bf562d11c HTTP/1.1" 200 185
+INFO 2018-05-17 17:09:59,528 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0ODE5NywiZXhwIjoxNTI2NTQ4NDk3fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.dSUjwxbSX73u-Ke3I3NWTot6xCMH_MT_uwYr1NBw6C4 HTTP/1.1" 200 16
+WARNING 2018-05-17 17:12:03,144 basehttp 124 "GET /accounts/python/password/token/?sms_code=858887 HTTP/1.1" 400 41
+INFO 2018-05-17 17:15:40,070 basehttp 124 "GET /image_codes/d3f53d6b-3303-4f57-ba84-ea2809ae3cfa/ HTTP/1.1" 200 3263
+INFO 2018-05-17 17:15:41,180 basehttp 124 "GET /image_codes/652e5fc0-3c22-4757-a1bf-1fc3fe4cf7cc/ HTTP/1.1" 200 3235
+INFO 2018-05-17 17:15:42,103 basehttp 124 "GET /image_codes/a6b890b8-bdf9-4cad-b4ce-8849088db63f/ HTTP/1.1" 200 3213
+INFO 2018-05-17 17:15:44,307 basehttp 124 "GET /image_codes/b8ed798d-bbfb-4001-97ca-a5dcb9d33ebb/ HTTP/1.1" 200 3569
+INFO 2018-05-17 17:15:46,632 basehttp 124 "GET /image_codes/95776774-0863-439b-b8c1-759b130cd603/ HTTP/1.1" 200 3323
+INFO 2018-05-17 17:15:47,544 basehttp 124 "GET /image_codes/c56a32b6-72a9-4401-825b-73d38f871d48/ HTTP/1.1" 200 3214
+INFO 2018-05-17 17:15:48,429 basehttp 124 "GET /image_codes/a3269343-a03c-4ab6-964e-ad33e8ae774b/ HTTP/1.1" 200 3431
+INFO 2018-05-17 17:15:55,241 basehttp 124 "GET /accounts/python/sms/token/?text=beuy&image_code_id=a3269343-a03c-4ab6-964e-ad33e8ae774b HTTP/1.1" 200 185
+INFO 2018-05-17 17:15:56,250 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0ODU1NSwiZXhwIjoxNTI2NTQ4ODU1fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.fbcb2fmomWVIp2lL-UV2-0Q6VTqA2T5Cwz4Fdd86Spg HTTP/1.1" 200 16
+WARNING 2018-05-17 17:16:53,014 basehttp 124 "GET /accounts/python/password/token/?sms_code=300788 HTTP/1.1" 400 41
+WARNING 2018-05-17 17:18:33,358 basehttp 124 "GET /accounts/python/password/token/?sms_code=300788 HTTP/1.1" 400 41
+INFO 2018-05-17 17:25:31,465 basehttp 124 "GET /image_codes/959fb4bf-782e-4397-8d4d-4f4be8478141/ HTTP/1.1" 200 2879
+INFO 2018-05-17 17:25:37,069 basehttp 124 "GET /accounts/python/sms/token/?text=wpfw&image_code_id=959fb4bf-782e-4397-8d4d-4f4be8478141 HTTP/1.1" 200 185
+INFO 2018-05-17 17:25:38,901 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0OTEzNywiZXhwIjoxNTI2NTQ5NDM3fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.J222jTWBbH8O15FhGfh8LJjl_6ZTKAMLnMzR-pcE_e0 HTTP/1.1" 200 16
+WARNING 2018-05-17 17:25:47,639 basehttp 124 "GET /accounts/python/password/token/?sms_code=665360 HTTP/1.1" 400 41
+INFO 2018-05-17 17:27:10,651 basehttp 124 "GET /image_codes/2b4647e3-2ff5-479f-858d-32f600cc9603/ HTTP/1.1" 200 2899
+INFO 2018-05-17 17:27:17,206 basehttp 124 "GET /accounts/python/sms/token/?text=jbh4&image_code_id=2b4647e3-2ff5-479f-858d-32f600cc9603 HTTP/1.1" 200 185
+INFO 2018-05-17 17:27:18,814 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0OTIzNywiZXhwIjoxNTI2NTQ5NTM3fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.hNX2V2vcDjK61kb5WtdoQ8VpL41pQx9AsbRWmN37VeY HTTP/1.1" 200 16
+INFO 2018-05-17 17:35:41,014 basehttp 124 "GET /image_codes/b8d3b279-9b50-4699-bdd3-cfe5ff75df62/ HTTP/1.1" 200 3144
+INFO 2018-05-17 17:35:46,088 basehttp 124 "GET /accounts/python/sms/token/?text=bhdm&image_code_id=b8d3b279-9b50-4699-bdd3-cfe5ff75df62 HTTP/1.1" 200 185
+INFO 2018-05-17 17:35:47,443 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0OTc0NiwiZXhwIjoxNTI2NTUwMDQ2fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.m1-9nOb6YIFP6rnF1bXrG0GfTDzuv7nI-qx06bMa6qo HTTP/1.1" 200 16
+INFO 2018-05-17 17:35:59,914 basehttp 124 "GET /accounts/python/password/token/?sms_code=592349 HTTP/1.1" 200 160

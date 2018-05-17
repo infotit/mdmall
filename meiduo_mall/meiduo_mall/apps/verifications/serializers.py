@@ -13,8 +13,10 @@ class CheckImageCodeSerializer(serializers.Serializer):
         text = attrs['text']
 
         redis_conn = get_redis_connection("verify_codes")
+
         real_image_code = redis_conn.get("IMAGE_CODE_%s" % image_code_id)
         real_image_code = real_image_code.decode()
+
 
         if real_image_code is None:
             raise serializers.ValidationError('图片验证码无效')

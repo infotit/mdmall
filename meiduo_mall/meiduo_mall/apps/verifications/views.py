@@ -54,9 +54,15 @@ class SMSCodeView(GenericAPIView):
         print('短信验证码是：%s' % sms_code)
 
         redis_conn = get_redis_connection("verify_codes")
-        # redis_conn.setex("SMS_" + mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
+        # redis_conn.setex("SMS_%s" % mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
         # redis_conn.setex("send_flag" + mobile, constants.SEND_SMS_CODE_INTERVAL, 1)
 
+        # 使用redis的pipeline管道一次执行多个命令
+        pl = redis_conn.pipeline()
+        pl.setex('SMS_%s' % mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
+        pl.setex('send_flag_%s' % mobile, constants.SEND_SMS_CODE_INTERVAL, 1)
+        # 让管道执行命令
+        pl.execute()
         # 发送短信验证码
 
         # ccp = CCP()
@@ -88,6 +94,13 @@ class SMSCodeByTokenView(APIView):
         # 生成短信验证码并发送短信验证码
         sms_code = "%06d" % random.randint(0, 999999)
         print('短信验证码是：%s' % sms_code)
+
+        # 使用redis的pipeline管道一次执行多个命令
+        pl = redis_conn.pipeline()
+        pl.setex('SMS_%s' % mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
+        pl.setex('send_flag_%s' % mobile, constants.SEND_SMS_CODE_INTERVAL, 1)
+        # 让管道执行命令
+        pl.execute()
 
         send_sms_code.delay(mobile, sms_code)
 
