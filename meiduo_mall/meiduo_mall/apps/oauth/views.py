@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from rest_framework.generics import GenericAPIView
+from .serializers import OAuthQQUserSerializer
 
 # Create your views here.
 
@@ -27,7 +29,8 @@ class OAuthQQURLView(APIView):
         return Response({"oauth_url": login_url})
 
 
-class OAuthQQUserView(APIView):
+class OAuthQQUserView(GenericAPIView):
+    serializer_class = OAuthQQUserSerializer
     def get(self, request):
         # 获取参数code参数
         code = request.query_params.get('code')
@@ -62,3 +65,21 @@ class OAuthQQUserView(APIView):
                 "username": user.username,
                 "user_id": user.id
             })
+
+    def post(self, request):
+        serializer = self.get_serializer(data=request.data)
+
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+
+        jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+        jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+        payload = jwt_payload_handler(user)
+        token = jwt_encode_handler(payload)
+
+        return Response({
+            "token": token,
+            "username": user.username,
+            "user_id": user.id
+        })
+

@@ -79,3 +79,5 @@ class OAuthQQ(object):
             raise QQAPIException('获取openid异常')
         openid = data.get('openid', None)
         return openid
+
+

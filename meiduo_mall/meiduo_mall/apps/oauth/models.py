@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.db import models
-from itsdangerous import TimedJSONWebSignatureSerializer as TJWSSerializer
+from itsdangerous import TimedJSONWebSignatureSerializer as TJWSSerializer, BadData
 
 from . import constants
 
@@ -33,3 +33,18 @@ class OAuthQQUser(BaseModel):
         data = {'openid': openid}
         token = serializer.dumps(data)
         return token.decode()
+
+    @staticmethod
+    def check_save_user_token(token):
+        """
+        检验保存用户数据的token
+        :param token: token
+        :return: openid or None
+        """
+        serializer = TJWSSerializer(settings.SECRET_KEY, expires_in=constants.SAVE_QQ_USER_TOKEN_EXPIRES)
+        try:
+            data = serializer.loads(token)
+        except BadData:
+            return None
+        else:
+            return data.get('openid')

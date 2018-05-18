@@ -2747,3 +2747,112 @@ INFO 2018-05-18 14:45:33,903 basehttp 124 "GET /oauth/qq/authorization/?state=/i
 INFO 2018-05-18 14:46:19,602 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
 INFO 2018-05-18 14:46:33,154 basehttp 124 "GET /oauth/qq/user/?code=CD5568C5B39C7984B41B55086D5B1D00 HTTP/1.1" 200 190
 INFO 2018-05-18 14:46:33,221 basehttp 124 "GET /image_codes/43ae03fb-b145-4781-bace-06086847f3b2/ HTTP/1.1" 200 3541
+INFO 2018-05-18 15:43:55,019 basehttp 124 "GET /image_codes/b4eb00b0-6ec5-4ae4-87f6-4ba604deb210/ HTTP/1.1" 200 3195
+INFO 2018-05-18 15:43:58,498 basehttp 124 "GET /image_codes/2d020d88-bbbc-4d69-808a-2140f16393ae/ HTTP/1.1" 200 3293
+INFO 2018-05-18 15:44:03,979 basehttp 124 "GET /image_codes/d1b72e53-caef-4902-a65d-7415a80c5871/ HTTP/1.1" 200 3152
+INFO 2018-05-18 15:44:07,632 basehttp 124 "GET /accounts/python/sms/token/?text=ezqo&image_code_id=d1b72e53-caef-4902-a65d-7415a80c5871 HTTP/1.1" 200 185
+INFO 2018-05-18 15:44:09,128 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjYyOTQ0NywiZXhwIjoxNTI2NjI5NzQ3fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.vH79YAeAo6FVpk9qplbHmHePaTF4QiL5YKZZKAEoXp4 HTTP/1.1" 200 16
+INFO 2018-05-18 15:44:15,672 basehttp 124 "GET /accounts/python/password/token/?sms_code=198789 HTTP/1.1" 200 160
+INFO 2018-05-18 15:44:25,605 basehttp 124 "OPTIONS /users/1/password/ HTTP/1.1" 200 0
+INFO 2018-05-18 15:44:25,668 basehttp 124 "POST /users/1/password/ HTTP/1.1" 200 8
+INFO 2018-05-18 15:45:24,206 basehttp 124 "GET /image_codes/10bf0945-aedf-404c-b382-a924bbb40cfc/ HTTP/1.1" 200 3198
+INFO 2018-05-18 15:45:29,355 basehttp 124 "GET /accounts/python/sms/token/?text=beil&image_code_id=10bf0945-aedf-404c-b382-a924bbb40cfc HTTP/1.1" 200 185
+INFO 2018-05-18 15:45:30,265 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjYyOTUyOSwiZXhwIjoxNTI2NjI5ODI5fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.2E5iXkrJtyruQF6YzXaoWvoLxV7qyGcBcMOYfgXxxpc HTTP/1.1" 200 16
+INFO 2018-05-18 15:45:34,635 basehttp 124 "GET /accounts/python/password/token/?sms_code=709409 HTTP/1.1" 200 160
+INFO 2018-05-18 15:45:39,744 basehttp 124 "POST /users/1/password/ HTTP/1.1" 200 8
+INFO 2018-05-18 15:46:11,479 basehttp 124 "GET /image_codes/18e201a8-5999-44d1-bec3-c3d8f9c94148/ HTTP/1.1" 200 2856
+INFO 2018-05-18 15:46:16,234 basehttp 124 "GET /accounts/python/sms/token/?text=nspd&image_code_id=18e201a8-5999-44d1-bec3-c3d8f9c94148 HTTP/1.1" 200 185
+WARNING 2018-05-18 15:46:17,729 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjYyOTU3NiwiZXhwIjoxNTI2NjI5ODc2fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.SO611xbBoWJg5BVyb0VFpZrCfWBw9FpJntiTaVigxIU HTTP/1.1" 429 38
+WARNING 2018-05-18 15:46:20,776 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjYyOTU3NiwiZXhwIjoxNTI2NjI5ODc2fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.SO611xbBoWJg5BVyb0VFpZrCfWBw9FpJntiTaVigxIU HTTP/1.1" 429 38
+WARNING 2018-05-18 15:46:28,305 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjYyOTU3NiwiZXhwIjoxNTI2NjI5ODc2fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.SO611xbBoWJg5BVyb0VFpZrCfWBw9FpJntiTaVigxIU HTTP/1.1" 429 38
+INFO 2018-05-18 15:46:31,158 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjYyOTU3NiwiZXhwIjoxNTI2NjI5ODc2fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.SO611xbBoWJg5BVyb0VFpZrCfWBw9FpJntiTaVigxIU HTTP/1.1" 200 16
+INFO 2018-05-18 15:46:39,731 basehttp 124 "GET /accounts/python/password/token/?sms_code=749508 HTTP/1.1" 200 160
+INFO 2018-05-18 15:46:44,997 basehttp 124 "POST /users/1/password/ HTTP/1.1" 200 8
+INFO 2018-05-18 15:47:00,257 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-05-18 15:47:00,310 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-05-18 15:47:04,340 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-05-18 15:48:06,215 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 15:48:23,181 basehttp 124 "GET /oauth/qq/user/?code=CEBC22726B952283FEA5CA22157FE75C HTTP/1.1" 200 190
+INFO 2018-05-18 15:48:23,206 basehttp 124 "GET /image_codes/3c069cef-7f90-4a97-b0de-738b9e90d577/ HTTP/1.1" 200 2977
+INFO 2018-05-18 15:48:35,710 basehttp 124 "GET /sms_codes/18811110000/?text=38ye&image_code_id=3c069cef-7f90-4a97-b0de-738b9e90d577 HTTP/1.1" 200 16
+INFO 2018-05-18 15:48:45,442 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2018-05-18 15:48:45,451 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+WARNING 2018-05-18 15:48:54,308 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+ERROR 2018-05-18 16:27:53,858 utils 60 'NoneType' object is not subscriptable
+ERROR 2018-05-18 16:27:53,861 basehttp 124 "GET /oauth/qq/user/?code=CEBC22726B952283FEA5CA22157FE75C HTTP/1.1" 503 34
+INFO 2018-05-18 16:29:59,874 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 16:30:10,505 basehttp 124 "GET /oauth/qq/user/?code=826E0EE4B3B1B2E4DDC96553D80A2B83 HTTP/1.1" 200 190
+INFO 2018-05-18 16:30:10,536 basehttp 124 "GET /image_codes/d85fb39f-0685-488c-82c2-c60f59d414ee/ HTTP/1.1" 200 3145
+INFO 2018-05-18 16:30:21,454 basehttp 124 "GET /sms_codes/18811110000/?text=suey&image_code_id=d85fb39f-0685-488c-82c2-c60f59d414ee HTTP/1.1" 200 16
+INFO 2018-05-18 16:30:26,307 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2018-05-18 16:30:26,317 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 72, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 31, in validate
+    if real_sms_code.decode() != sms_code:
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2018-05-18 16:30:26,373 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 17580
+INFO 2018-05-18 16:32:00,723 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 16:32:14,313 basehttp 124 "GET /oauth/qq/user/?code=08D580781B780F38D63FD7A4204E70ED HTTP/1.1" 200 190
+INFO 2018-05-18 16:32:14,404 basehttp 124 "GET /image_codes/57fdb108-e120-47aa-b3c5-063421e6df21/ HTTP/1.1" 200 3528
+INFO 2018-05-18 16:32:25,063 basehttp 124 "GET /sms_codes/18811110000/?text=xvwb&image_code_id=57fdb108-e120-47aa-b3c5-063421e6df21 HTTP/1.1" 200 16
+ERROR 2018-05-18 16:32:37,319 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 72, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/serializers.py", line 31, in validate
+    if real_sms_code.decode() != sms_code:
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2018-05-18 16:32:37,492 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18795
+INFO 2018-05-18 16:33:35,713 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 16:34:01,158 basehttp 124 "GET /oauth/qq/user/?code=48E71BF0B6838EF75A324B13C1D5B970 HTTP/1.1" 200 190
+INFO 2018-05-18 16:34:01,250 basehttp 124 "GET /image_codes/69f71f28-a229-466a-8679-06380d5d2d17/ HTTP/1.1" 200 3078
+INFO 2018-05-18 16:34:12,574 basehttp 124 "GET /sms_codes/18811110000/?text=cysz&image_code_id=69f71f28-a229-466a-8679-06380d5d2d17 HTTP/1.1" 200 16
+INFO 2018-05-18 16:34:22,483 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 200 207
+INFO 2018-05-18 16:37:17,533 basehttp 124 "GET /image_codes/2f687be1-4c1b-4474-8163-054fb9e41a28/ HTTP/1.1" 200 3278
+INFO 2018-05-18 16:37:20,067 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 16:39:11,757 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 16:39:22,255 basehttp 124 "GET /oauth/qq/user/?code=D497FBE40945A3A1DB5C20983EF0EB4F HTTP/1.1" 200 207
+INFO 2018-05-18 17:53:16,000 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-18 17:53:16,097 basehttp 124 "GET /user/ HTTP/1.1" 200 83
