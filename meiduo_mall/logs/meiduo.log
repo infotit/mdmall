@@ -2305,3 +2305,445 @@ INFO 2018-05-17 17:35:41,014 basehttp 124 "GET /image_codes/b8d3b279-9b50-4699-b
 INFO 2018-05-17 17:35:46,088 basehttp 124 "GET /accounts/python/sms/token/?text=bhdm&image_code_id=b8d3b279-9b50-4699-bdd3-cfe5ff75df62 HTTP/1.1" 200 185
 INFO 2018-05-17 17:35:47,443 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU0OTc0NiwiZXhwIjoxNTI2NTUwMDQ2fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.m1-9nOb6YIFP6rnF1bXrG0GfTDzuv7nI-qx06bMa6qo HTTP/1.1" 200 16
 INFO 2018-05-17 17:35:59,914 basehttp 124 "GET /accounts/python/password/token/?sms_code=592349 HTTP/1.1" 200 160
+INFO 2018-05-17 18:14:02,710 basehttp 124 "GET /image_codes/cbda1124-971e-4435-ba21-e63f4773748f/ HTTP/1.1" 200 2962
+INFO 2018-05-17 18:14:02,947 basehttp 124 "GET /image_codes/9840e8b7-d16b-4eb4-9f32-c5b4fe3aa64d/ HTTP/1.1" 200 3465
+INFO 2018-05-17 18:14:03,102 basehttp 124 "GET /image_codes/b728bc4e-312d-41e5-bafd-b40e1272a070/ HTTP/1.1" 200 3017
+INFO 2018-05-17 18:14:03,140 basehttp 124 "GET /image_codes/9840e8b7-d16b-4eb4-9f32-c5b4fe3aa64d/ HTTP/1.1" 200 3167
+INFO 2018-05-17 18:14:03,299 basehttp 124 "GET /image_codes/69c78316-9b33-4abe-8560-9386f5752270/ HTTP/1.1" 200 2940
+INFO 2018-05-17 18:14:03,335 basehttp 124 "GET /image_codes/b728bc4e-312d-41e5-bafd-b40e1272a070/ HTTP/1.1" 200 3273
+INFO 2018-05-17 18:14:08,645 basehttp 124 "GET /accounts/python/sms/token/?text=euna&image_code_id=69c78316-9b33-4abe-8560-9386f5752270 HTTP/1.1" 200 185
+INFO 2018-05-17 18:14:10,175 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU1MjA0OCwiZXhwIjoxNTI2NTUyMzQ4fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.0EcAbBOj-x4ka9sKTv8h-LM1zN7KGYSsQqWKLHdemd8 HTTP/1.1" 200 16
+INFO 2018-05-17 18:14:14,999 basehttp 124 "GET /accounts/python/password/token/?sms_code=750286 HTTP/1.1" 200 160
+INFO 2018-05-17 18:14:21,321 basehttp 124 "OPTIONS /users/1/password/ HTTP/1.1" 200 0
+WARNING 2018-05-17 18:14:21,333 base 152 Not Found: /users/1/password/
+WARNING 2018-05-17 18:14:21,334 basehttp 124 "POST /users/1/password/ HTTP/1.1" 404 3812
+INFO 2018-05-17 18:15:50,809 basehttp 124 "GET /image_codes/c3ba61a4-011b-4e4d-a82f-991bb89fb7ec/ HTTP/1.1" 200 3463
+INFO 2018-05-17 18:15:59,035 basehttp 124 "GET /accounts/python/sms/token/?text=a5qn&image_code_id=c3ba61a4-011b-4e4d-a82f-991bb89fb7ec HTTP/1.1" 200 185
+INFO 2018-05-17 18:16:01,612 basehttp 124 "GET /sms_codes/?access_token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjU1MjE1OSwiZXhwIjoxNTI2NTUyNDU5fQ.eyJtb2JpbGUiOiIxODgxMTExMDAwMCJ9.-1Mq0qNVpcazuwRkVfnqdcQYradOM2o8ZZzurCYqNXc HTTP/1.1" 200 16
+INFO 2018-05-17 18:16:08,701 basehttp 124 "GET /accounts/python/password/token/?sms_code=021183 HTTP/1.1" 200 160
+INFO 2018-05-17 18:16:16,137 basehttp 124 "OPTIONS /users/1/password/ HTTP/1.1" 200 0
+WARNING 2018-05-17 18:16:16,148 base 152 Not Found: /users/1/password/
+WARNING 2018-05-17 18:16:16,149 basehttp 124 "POST /users/1/password/ HTTP/1.1" 404 3812
+INFO 2018-05-17 18:17:22,141 basehttp 124 "POST /users/1/password/ HTTP/1.1" 200 8
+INFO 2018-05-17 18:17:29,610 basehttp 124 "GET /image_codes/67954005-ac01-400e-b39c-4b766f6f985f/ HTTP/1.1" 200 3021
+ERROR 2018-05-17 18:17:30,244 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-17 18:17:30,330 basehttp 124 "GET / HTTP/1.1" 400 64250
+ERROR 2018-05-17 18:17:30,675 exception 80 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2018-05-17 18:17:30,727 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 64328
+ERROR 2018-05-17 23:58:31,807 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 16, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-17 23:58:31,894 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88957
+WARNING 2018-05-17 23:58:32,276 base 152 Not Found: /favicon.ico
+WARNING 2018-05-17 23:58:32,276 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3909
+ERROR 2018-05-17 23:58:59,353 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 16, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-17 23:58:59,426 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88957
+ERROR 2018-05-17 23:59:29,070 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 16, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-17 23:59:29,149 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88957
+ERROR 2018-05-18 00:00:37,353 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 16, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:00:37,434 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88957
+ERROR 2018-05-18 00:04:36,681 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 16, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:04:36,813 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88957
+ERROR 2018-05-18 00:07:28,945 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:07:29,036 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88958
+ERROR 2018-05-18 00:09:58,846 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:09:58,938 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88958
+ERROR 2018-05-18 00:13:12,739 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:13:12,830 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88958
+ERROR 2018-05-18 00:14:33,595 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:14:33,701 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88958
+ERROR 2018-05-18 00:14:48,267 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:14:48,351 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88958
+ERROR 2018-05-18 00:15:29,961 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:15:30,060 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88958
+INFO 2018-05-18 00:22:57,231 basehttp 124 "GET /oauth/qq/authorization?state=/user_center_info.html HTTP/1.1" 301 0
+ERROR 2018-05-18 00:22:57,413 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:22:57,588 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88823
+ERROR 2018-05-18 00:23:03,792 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:23:03,907 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 500 88823
+ERROR 2018-05-18 00:23:49,131 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:23:49,219 basehttp 124 "GET /oauth/qq/authorization/?state=user_center_info.html HTTP/1.1" 500 88814
+ERROR 2018-05-18 00:25:29,624 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 17, in get
+    state = request.query_params('state')
+TypeError: 'QueryDict' object is not callable
+ERROR 2018-05-18 00:25:29,698 basehttp 124 "GET /oauth/qq/authorization/ HTTP/1.1" 500 88286
+INFO 2018-05-18 00:26:32,780 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 5822
+INFO 2018-05-18 00:26:32,824 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-05-18 00:26:32,836 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-05-18 00:26:32,842 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-05-18 00:26:32,842 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-05-18 00:26:32,843 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-05-18 00:26:32,844 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-05-18 00:26:32,845 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-05-18 00:26:32,846 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-05-18 00:26:32,859 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-05-18 00:26:32,860 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+INFO 2018-05-18 00:26:32,951 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-05-18 00:26:33,036 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+WARNING 2018-05-18 00:26:40,287 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+WARNING 2018-05-18 00:26:49,504 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1739
+INFO 2018-05-18 09:22:20,233 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 09:34:34,486 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 09:35:28,373 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 09:37:10,829 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 09:38:51,583 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 09:40:34,473 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 09:41:36,138 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 09:42:39,680 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 12:19:57,640 basehttp 124 "GET /oauth/qq/authorization/?state=/user_center_info.html HTTP/1.1" 200 216
+INFO 2018-05-18 13:32:27,836 basehttp 124 "GET /image_codes/d3887faf-2613-43a5-9469-d5e44d58ded3/ HTTP/1.1" 200 3213
+INFO 2018-05-18 13:32:48,533 basehttp 124 "GET /oauth/qq/authorization/?state=/ HTTP/1.1" 200 195
+INFO 2018-05-18 14:19:40,530 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 14:26:27,450 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+ERROR 2018-05-18 14:28:15,886 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 39, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/utils.py", line 53, in get_access_token
+    url += req_data
+TypeError: must be str, not dict
+ERROR 2018-05-18 14:28:15,998 basehttp 124 "GET /oauth/qq/user/?code=F8DD06FFCDB3E0DF2E68F173561DB7C2 HTTP/1.1" 500 17220
+ERROR 2018-05-18 14:39:03,703 utils 60 'NoneType' object is not subscriptable
+ERROR 2018-05-18 14:39:03,704 basehttp 124 "GET /oauth/qq/user/?code=F8DD06FFCDB3E0DF2E68F173561DB7C2 HTTP/1.1" 503 34
+ERROR 2018-05-18 14:39:24,914 utils 60 'NoneType' object is not subscriptable
+ERROR 2018-05-18 14:39:24,915 basehttp 124 "GET /oauth/qq/user/?code=107BF1CDBB9DBEF42BD30F252A5F37ED HTTP/1.1" 503 34
+ERROR 2018-05-18 14:44:49,701 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/views.py", line 41, in get
+    openid = oauth_qq.get_openid(access_token)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/oauth/utils.py", line 70, in get_openid
+    url = 'https://graph.qq.com/oauth2.0/me?access_token=' + access_token
+TypeError: must be str, not NoneType
+ERROR 2018-05-18 14:44:49,756 basehttp 124 "GET /oauth/qq/user/?code=189F3E273493A422A06C9F738C319ADE HTTP/1.1" 500 17272
+INFO 2018-05-18 14:45:33,903 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 14:46:19,602 basehttp 124 "GET /oauth/qq/authorization/?state=/index.html HTTP/1.1" 200 205
+INFO 2018-05-18 14:46:33,154 basehttp 124 "GET /oauth/qq/user/?code=CD5568C5B39C7984B41B55086D5B1D00 HTTP/1.1" 200 190
+INFO 2018-05-18 14:46:33,221 basehttp 124 "GET /image_codes/43ae03fb-b145-4781-bace-06086847f3b2/ HTTP/1.1" 200 3541

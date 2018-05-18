@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^accounts/(?P<account>\w{4,20})/sms/token/$', views.SMSCodeTokenView.as_view()),
     # 获取修改密码的token
     url(r'^accounts/(?P<account>\w{4,20})/password/token/$', views.PasswordTokenView.as_view()),
+    url(r'^users/(?P<pk>\d+)/password/$', views.PasswordView.as_view()),
 ]

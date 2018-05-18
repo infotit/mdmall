@@ -54,7 +54,7 @@ var vm = new Vue({
             .catch(error => {
                 status = error.response.status;
                 if (status == 401 || status == 403) {
-                    location.href = 'login.html?next=/user_center_site.html';
+                    location.href = '../login.html/user_center_site.html';
                 } else {
                     alert(error.response.data.detail);
                 }
