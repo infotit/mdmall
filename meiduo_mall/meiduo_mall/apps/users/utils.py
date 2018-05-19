@@ -17,7 +17,7 @@ def jwt_response_payload_handler(token, user=None, request=None):
 
 
 def get_user_by_account(account):
-    # 如果账号是手机号
+    # 根据account判断是否是手机号登陆
     try:
         if re.match(r'^1[3-9]\d{9}$', account):
             user = User.objects.get(mobile=account)
