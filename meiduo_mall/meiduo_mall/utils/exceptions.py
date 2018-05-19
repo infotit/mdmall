@@ -1,7 +1,7 @@
 import logging
 
 from django.db import DatabaseError
-from redis import RedisError
+from redis.exceptions import RedisError
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import exception_handler as drf_exception_handler
