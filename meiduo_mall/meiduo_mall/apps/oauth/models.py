@@ -48,3 +48,5 @@ class OAuthQQUser(BaseModel):
             return None
         else:
             return data.get('openid')
+
+

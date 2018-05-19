@@ -4,12 +4,13 @@ from django.shortcuts import render
 
 # Create your views here.
 from rest_framework import status
-from rest_framework.generics import CreateAPIView, GenericAPIView, RetrieveAPIView
+from rest_framework.generics import CreateAPIView, GenericAPIView, RetrieveAPIView, UpdateAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import mixins
 from rest_framework.permissions import IsAuthenticated
 
+from users.serializers import EmailSerializer
 from users.models import User
 from users.serializers import UserDetailSerializer
 from verifications.serializers import CheckImageCodeSerializer
@@ -100,3 +101,28 @@ class UserDetailView(RetrieveAPIView):
     permission_classes = [IsAuthenticated]
     def get_object(self):
         return self.request.user
+
+
+class EmailView(UpdateAPIView):
+    """
+    用户邮箱
+    """
+    serializer_class = EmailSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_object(self):
+        return self.request.user
+
+
+class EmailVerifyView(APIView):
+    def get(self, request):
+        token = request.query_params.get('token')
+        if not token:
+            return Response({"message": "缺少token"}, status=status.HTTP_400_BAD_REQUEST)
+        result = User.check_email_verify_token(token)
+        if result:
+            return Response({"message": "OK"})
+        else:
+            return Response({"message": "非法的token"}, status=status.HTTP_400_BAD_REQUEST)
+
+

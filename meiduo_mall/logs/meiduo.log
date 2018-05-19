@@ -2856,3 +2856,213 @@ INFO 2018-05-18 16:39:11,757 basehttp 124 "GET /oauth/qq/authorization/?state=/u
 INFO 2018-05-18 16:39:22,255 basehttp 124 "GET /oauth/qq/user/?code=D497FBE40945A3A1DB5C20983EF0EB4F HTTP/1.1" 200 207
 INFO 2018-05-18 17:53:16,000 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
 INFO 2018-05-18 17:53:16,097 basehttp 124 "GET /user/ HTTP/1.1" 200 83
+INFO 2018-05-18 23:45:00,839 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-18 23:45:00,941 basehttp 124 "GET /user/ HTTP/1.1" 200 83
+INFO 2018-05-18 23:45:07,378 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2018-05-18 23:45:07,393 basehttp 124 "POST /emails/ HTTP/1.1" 405 46
+INFO 2018-05-18 23:46:05,026 basehttp 124 "GET /user/ HTTP/1.1" 200 83
+INFO 2018-05-18 23:46:13,186 basehttp 124 "GET /user/ HTTP/1.1" 200 83
+INFO 2018-05-18 23:46:26,896 basehttp 124 "GET /user/ HTTP/1.1" 200 83
+ERROR 2018-05-18 23:46:34,215 exception 135 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/users/serializers.py", line 187, in update
+    send_verify_email.delay()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/celery/app/task.py", line 413, in delay
+    return self.apply_async(args, kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/celery/app/task.py", line 518, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: send_verify_email() missing 2 required positional arguments: 'to_email' and 'verify_url'
+ERROR 2018-05-18 23:46:34,273 basehttp 124 "PUT /emails/ HTTP/1.1" 500 18265
+INFO 2018-05-18 23:49:26,174 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:51:44,153 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:54:17,296 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:54:18,253 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:54:35,456 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:54:36,332 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:55:13,715 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-18 23:55:13,764 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:55:17,370 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-18 23:55:17,391 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:55:51,565 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:55:54,608 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:56:27,818 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:56:28,523 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:56:34,748 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:56:35,670 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:56:54,984 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:56:55,897 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-18 23:58:04,682 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-18 23:58:05,650 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:04:43,119 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:04:58,364 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+WARNING 2018-05-19 00:05:52,154 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 00:05:52,157 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODkxNywiZXhwIjoxNTI2NzQ1MzE3fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.gB_FIFucbv1N92pAAApu_jRZgzj-rwuTclpLfW6yvO4 HTTP/1.1" 404 4421
+WARNING 2018-05-19 00:06:01,986 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 00:06:01,987 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODg3NiwiZXhwIjoxNTI2NzQ1Mjc2fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.fOjSKl8MMjLUfn1Ot8O_vvOR-Xm1W-8DYw_mjpAEmS0 HTTP/1.1" 404 4421
+INFO 2018-05-19 00:07:45,380 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:07:45,402 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:12:09,743 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:12:09,799 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:12:10,586 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:22:27,098 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:22:27,201 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:22:27,933 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:22:28,022 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:23:39,032 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:23:39,701 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:27:16,018 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:27:16,740 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+WARNING 2018-05-19 00:27:25,383 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 00:27:25,385 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODkxNywiZXhwIjoxNTI2NzQ1MzE3fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.gB_FIFucbv1N92pAAApu_jRZgzj-rwuTclpLfW6yvO4 HTTP/1.1" 404 4421
+INFO 2018-05-19 00:30:28,818 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:30:29,553 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+WARNING 2018-05-19 00:31:34,329 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 00:31:34,330 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODg3NiwiZXhwIjoxNTI2NzQ1Mjc2fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.fOjSKl8MMjLUfn1Ot8O_vvOR-Xm1W-8DYw_mjpAEmS0 HTTP/1.1" 404 4421
+INFO 2018-05-19 00:34:59,224 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:34:59,283 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:35:00,089 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:35:00,109 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:37:23,278 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:37:24,648 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:39:24,799 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:39:25,820 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:42:48,517 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:42:49,398 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:43:11,614 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:43:12,291 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:44:16,630 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:44:17,332 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:44:29,426 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:44:30,169 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 00:53:06,565 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:53:06,658 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 00:53:07,181 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 00:53:07,263 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+WARNING 2018-05-19 00:58:32,660 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 00:58:32,662 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODkxNywiZXhwIjoxNTI2NzQ1MzE3fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.gB_FIFucbv1N92pAAApu_jRZgzj-rwuTclpLfW6yvO4 HTTP/1.1" 404 4592
+WARNING 2018-05-19 00:58:42,609 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 00:58:42,610 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODg3NiwiZXhwIjoxNTI2NzQ1Mjc2fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.fOjSKl8MMjLUfn1Ot8O_vvOR-Xm1W-8DYw_mjpAEmS0 HTTP/1.1" 404 4592
+WARNING 2018-05-19 00:58:51,783 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 00:58:51,784 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODg1OCwiZXhwIjoxNTI2NzQ1MjU4fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.dv78hFKZ25J8JAPINeNryZ36g80MOol-c4izw27rYVE HTTP/1.1" 404 4592
+INFO 2018-05-19 01:01:11,633 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:01:12,332 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 01:06:09,222 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 01:06:09,338 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:06:10,513 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 01:06:10,605 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 01:09:48,049 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:09:48,791 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 01:12:17,854 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:12:18,822 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 01:13:04,125 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:13:05,404 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 01:13:35,156 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:13:35,910 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 01:14:58,152 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:14:58,981 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 01:15:50,145 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+WARNING 2018-05-19 01:16:40,380 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 01:16:40,389 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY2Mzc1MCwiZXhwIjoxNTI2NzUwMTUwfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.hf_LOLp_28m_aGQuJlPn9O5oleZbItlTcwoYAYHwHfo HTTP/1.1" 404 4592
+INFO 2018-05-19 01:18:07,945 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 01:18:08,269 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:18:09,122 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2018-05-19 01:18:35,724 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 01:18:35,732 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY2Mzg4OSwiZXhwIjoxNTI2NzUwMjg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.dxn24x3LzgDsyXsMt3gezYrWXasMAs-vCXoitROhZBc HTTP/1.1" 404 4592
+WARNING 2018-05-19 01:20:14,671 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 01:20:14,678 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY2Mzg4OSwiZXhwIjoxNTI2NzUwMjg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.dxn24x3LzgDsyXsMt3gezYrWXasMAs-vCXoitROhZBc HTTP/1.1" 404 4592
+WARNING 2018-05-19 01:21:51,989 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 01:21:52,009 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY2Mzg4OSwiZXhwIjoxNTI2NzUwMjg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.dxn24x3LzgDsyXsMt3gezYrWXasMAs-vCXoitROhZBc HTTP/1.1" 404 4592
+WARNING 2018-05-19 01:22:39,206 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 01:22:39,210 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY2Mzg4OSwiZXhwIjoxNTI2NzUwMjg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.dxn24x3LzgDsyXsMt3gezYrWXasMAs-vCXoitROhZBc HTTP/1.1" 404 4592
+WARNING 2018-05-19 01:22:59,984 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 01:22:59,988 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODkxNywiZXhwIjoxNTI2NzQ1MzE3fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.gB_FIFucbv1N92pAAApu_jRZgzj-rwuTclpLfW6yvO4 HTTP/1.1" 404 4592
+WARNING 2018-05-19 01:23:16,379 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 01:23:16,382 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY1ODg3NiwiZXhwIjoxNTI2NzQ1Mjc2fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.fOjSKl8MMjLUfn1Ot8O_vvOR-Xm1W-8DYw_mjpAEmS0 HTTP/1.1" 404 4592
+INFO 2018-05-19 01:25:58,679 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:26:48,295 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 01:26:49,765 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 08:37:19,825 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-05-19 08:37:19,919 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 229
+INFO 2018-05-19 08:37:20,017 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 08:37:20,098 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 08:37:21,552 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 08:37:21,655 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+WARNING 2018-05-19 08:37:34,067 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 08:37:34,070 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5MDI0MSwiZXhwIjoxNTI2Nzc2NjQxfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.krFCMOFYoPREwFWPz_N1aPzwCGzksBZF7uKzX8iZaHs HTTP/1.1" 404 4592
+INFO 2018-05-19 09:49:17,558 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 09:49:17,725 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 09:49:50,339 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 09:49:50,459 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 09:50:21,643 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 09:50:22,285 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+WARNING 2018-05-19 09:51:10,403 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 09:51:10,413 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5NDYyMiwiZXhwIjoxNTI2NzgxMDIyfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.SiEQJ_t0hLQbLbOzlahldtaY-J7tuAsB-k5PBVAW66E HTTP/1.1" 404 4592
+WARNING 2018-05-19 09:51:16,270 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 09:51:16,272 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5NDYyMiwiZXhwIjoxNTI2NzgxMDIyfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.SiEQJ_t0hLQbLbOzlahldtaY-J7tuAsB-k5PBVAW66E HTTP/1.1" 404 4592
+WARNING 2018-05-19 09:52:30,916 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 09:52:30,919 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5NDYyMiwiZXhwIjoxNTI2NzgxMDIyfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.SiEQJ_t0hLQbLbOzlahldtaY-J7tuAsB-k5PBVAW66E HTTP/1.1" 404 4592
+WARNING 2018-05-19 09:53:43,829 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 09:53:43,832 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5NDYyMiwiZXhwIjoxNTI2NzgxMDIyfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.SiEQJ_t0hLQbLbOzlahldtaY-J7tuAsB-k5PBVAW66E HTTP/1.1" 404 4592
+WARNING 2018-05-19 09:53:53,204 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 09:53:53,209 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5NDU5MCwiZXhwIjoxNTI2NzgwOTkwfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.Fa8SioHlZKzuMtPyyHmE4e5zxnR-2iT5pHT_seLmhDg HTTP/1.1" 404 4592
+WARNING 2018-05-19 09:54:10,734 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 09:54:10,734 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5NDU5MCwiZXhwIjoxNTI2NzgwOTkwfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.Fa8SioHlZKzuMtPyyHmE4e5zxnR-2iT5pHT_seLmhDg HTTP/1.1" 404 4592
+WARNING 2018-05-19 09:54:34,212 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 09:54:34,212 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjY5NDU5MCwiZXhwIjoxNTI2NzgwOTkwfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.Fa8SioHlZKzuMtPyyHmE4e5zxnR-2iT5pHT_seLmhDg HTTP/1.1" 404 4592
+INFO 2018-05-19 13:19:48,152 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-05-19 13:19:48,241 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 229
+INFO 2018-05-19 13:19:48,322 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-19 13:19:48,417 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 13:19:49,706 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-05-19 13:19:49,785 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+WARNING 2018-05-19 13:19:55,001 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:19:55,003 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:10,447 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:10,448 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:33,191 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:33,191 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:34,745 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:34,746 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:35,048 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:35,050 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:35,153 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:35,154 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:35,272 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:35,272 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:38,270 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:38,271 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:39,084 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:39,085 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:21:55,442 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:21:55,443 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:22:25,128 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:22:25,129 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+WARNING 2018-05-19 13:22:28,893 base 152 Not Found: /emails/verification/
+WARNING 2018-05-19 13:22:28,894 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzE4OSwiZXhwIjoxNTI2NzkzNTg5fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.QyEfhTcL6tET7ioIKtNj2JgFSXy-v5wXjux7d3VUmxs HTTP/1.1" 404 4592
+INFO 2018-05-19 13:23:10,703 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2018-05-19 13:23:11,423 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
+INFO 2018-05-19 13:23:17,938 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzM5MSwiZXhwIjoxNTI2NzkzNzkxfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.6w04HtDnKlAx5eeKTTyYtJKzbDvVYe96eHLcduURWls HTTP/1.1" 200 16
