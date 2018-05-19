@@ -3066,3 +3066,61 @@ WARNING 2018-05-19 13:22:28,894 basehttp 124 "GET /emails/verification/?token=ey
 INFO 2018-05-19 13:23:10,703 basehttp 124 "GET /user/ HTTP/1.1" 200 100
 INFO 2018-05-19 13:23:11,423 basehttp 124 "PUT /emails/ HTTP/1.1" 200 36
 INFO 2018-05-19 13:23:17,938 basehttp 124 "GET /emails/verification/?token=eyJhbGciOiJIUzI1NiIsImlhdCI6MTUyNjcwNzM5MSwiZXhwIjoxNTI2NzkzNzkxfQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImluZm90aXQxMEAxNjMuY29tIn0.6w04HtDnKlAx5eeKTTyYtJKzbDvVYe96eHLcduURWls HTTP/1.1" 200 16
+INFO 2018-05-19 18:17:46,685 basehttp 124 "GET /areas HTTP/1.1" 301 0
+INFO 2018-05-19 18:17:46,741 basehttp 124 "GET /areas/ HTTP/1.1" 200 8455
+INFO 2018-05-19 18:17:46,787 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-05-19 18:17:46,788 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-05-19 18:17:46,789 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-05-19 18:17:46,791 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-05-19 18:17:46,801 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-05-19 18:17:46,803 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-05-19 18:17:46,804 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-05-19 18:17:46,804 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-05-19 18:17:46,805 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-05-19 18:17:46,805 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+INFO 2018-05-19 18:17:46,864 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-05-19 18:17:47,097 base 152 Not Found: /favicon.ico
+WARNING 2018-05-19 18:17:47,099 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 5552
+INFO 2018-05-19 18:18:15,879 basehttp 124 "GET /areas/610000 HTTP/1.1" 301 0
+ERROR 2018-05-19 18:18:15,884 exception 135 Internal Server Error: /areas/610000/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    instance = self.get_object()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/generics.py", line 85, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/areas/views.py", line 18, in get_queryset
+    return Area.object.all()
+AttributeError: type object 'Area' has no attribute 'object'
+ERROR 2018-05-19 18:18:16,014 basehttp 124 "GET /areas/610000/ HTTP/1.1" 500 97272
+INFO 2018-05-19 18:18:29,397 basehttp 124 "GET /areas/610000/ HTTP/1.1" 200 6575
+INFO 2018-05-19 18:30:00,997 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2018-05-19 18:30:01,088 basehttp 124 "GET /user/ HTTP/1.1" 401 35
+INFO 2018-05-19 18:30:05,476 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-05-19 18:30:05,531 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 229
+INFO 2018-05-19 18:30:05,638 basehttp 124 "GET /user/ HTTP/1.1" 200 99
+INFO 2018-05-19 18:30:10,524 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-05-19 18:30:14,039 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 464
+INFO 2018-05-19 18:30:15,873 basehttp 124 "GET /areas/130300/ HTTP/1.1" 200 293
+INFO 2018-05-19 18:30:19,775 basehttp 124 "GET /areas/130400/ HTTP/1.1" 200 659
+INFO 2018-05-19 18:30:45,081 basehttp 124 "GET /areas/150000/ HTTP/1.1" 200 485
+INFO 2018-05-19 18:30:47,077 basehttp 124 "GET /areas/150100/ HTTP/1.1" 200 362
+INFO 2018-05-19 18:30:52,235 basehttp 124 "GET /areas/150200/ HTTP/1.1" 200 374
+INFO 2018-05-19 18:31:03,563 basehttp 124 "GET /areas/150100/ HTTP/1.1" 200 362
+INFO 2018-05-19 18:31:24,987 basehttp 124 "GET /areas/370000/ HTTP/1.1" 200 602
+INFO 2018-05-19 18:31:34,939 basehttp 124 "GET /areas/370800/ HTTP/1.1" 200 404
