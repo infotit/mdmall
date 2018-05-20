@@ -11,6 +11,7 @@ class AreaViewSet(ReadOnlyModelViewSet):
     :list: 返回所有省份信息
     :retrieve: 返回省份下属城市信息
     """
+    pagination_class = None
     def get_queryset(self):
         if self.action == 'list':
             return Area.objects.filter(parent=None)
