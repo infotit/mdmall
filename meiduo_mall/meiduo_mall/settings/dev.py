@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'verifications.apps.VerificationsConfig',
     'corsheaders',
+    'django_crontab',
     'users.apps.UsersConfig',
     'oauth.apps.OauthConfig',
     'areas.apps.AreasConfig',
@@ -70,7 +71,7 @@ ROOT_URLCONF = 'meiduo_mall.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,6 +83,9 @@ TEMPLATES = [
         },
     },
 ]
+
+# 生成的静态html文件保存目录
+GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
 
 WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 
@@ -264,11 +268,11 @@ REST_FRAMEWORK_EXTENSIONS = {
 }
 
 # django文件存储
-DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.fdfs_storage.FasfDFSStorage'
+DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.storage.FastDFSStorage'
 
 # FastDFS
-FDFS_URL = 'http://172.16.255.158:8888/'  # 访问图片的路径域名 ip地址修改为自己机器的ip地址
-FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
+FDFS_BASE_URL = 'http://172.16.255.158:8888/'  # 访问图片的路径域名 ip地址修改为自己机器的ip地址
+FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'meiduo_mall.utils/fastdfs/client.conf')
 
 # 富文本编辑器ckeditor配置
 CKEDITOR_CONFIGS = {
@@ -279,3 +283,14 @@ CKEDITOR_CONFIGS = {
     },
 }
 CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所以此处设为''
+
+# 定时任务
+CRONJOBS = [
+    # 每5分钟执行一次生成主页静态文件
+    (
+        '*/5 * * * *', 'contents.crons.generate_static_index_html',
+        '>> /Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/logs/crontab.log')
+]
+
+# 解决crontab中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG=zh_cn.UTF-8'

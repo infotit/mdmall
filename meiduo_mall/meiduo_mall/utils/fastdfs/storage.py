@@ -12,7 +12,7 @@ class FastDFSStorage(Storage):
         self.client_conf = client_conf
 
         if base_url is None:
-            base_url = settings.FDFS_URL
+            base_url = settings.FDFS_BASE_URL
         self.base_url = base_url
 
     def _open(self, name, mode='rb'):
