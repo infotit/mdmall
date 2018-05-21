@@ -3979,3 +3979,8 @@ INFO 2018-05-21 00:54:24,342 basehttp 124 "GET /admin/goods/skuimage/43/change/ 
 INFO 2018-05-21 00:54:24,382 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
 INFO 2018-05-21 00:59:46,259 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
 INFO 2018-05-21 00:59:46,365 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 229
+INFO 2018-05-21 11:24:11,790 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-05-21 11:24:11,886 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 229
+INFO 2018-05-21 11:24:16,115 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-21 11:24:16,177 basehttp 124 "GET /user/ HTTP/1.1" 200 99
+INFO 2018-05-21 11:25:03,283 basehttp 124 "GET /user/ HTTP/1.1" 200 99
