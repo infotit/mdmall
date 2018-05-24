@@ -1,12 +1,14 @@
 from django.shortcuts import render
 from rest_framework.viewsets import ReadOnlyModelViewSet
+from rest_framework_extensions.cache.mixins import CacheResponseMixin
+
 from .models import Area
 from . import serializers
 
 
 # Create your views here.
 
-class AreaViewSet(ReadOnlyModelViewSet):
+class AreaViewSet(CacheResponseMixin, ReadOnlyModelViewSet):
     """
     :list: 返回所有省份信息
     :retrieve: 返回省份下属城市信息

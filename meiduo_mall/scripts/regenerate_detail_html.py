@@ -6,17 +6,14 @@
     ./regenerate_detail_html.py
 """
 import sys
-
 sys.path.insert(0, '../')
 sys.path.insert(0, '../meiduo_mall/apps')
 
 import os
-
 if not os.getenv('DJANGO_SETTINGS_MODULE'):
     os.environ['DJANGO_SETTINGS_MODULE'] = 'meiduo_mall.settings.dev'
 
 import django
-
 django.setup()
 
 from django.template import loader
@@ -95,7 +92,7 @@ def generate_static_sku_detail_html(sku_id):
 
     template = loader.get_template('detail.html')
     html_text = template.render(context)
-    file_path = os.path.join(settings.GENERATED_STATIC_HTML_FILES_DIR, 'goods/' + str(sku_id) + '.html')
+    file_path = os.path.join(settings.GENERATED_STATIC_HTML_FILES_DIR, 'goods/'+str(sku_id)+'.html')
     with open(file_path, 'w') as f:
         f.write(html_text)
 

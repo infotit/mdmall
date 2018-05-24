@@ -161,7 +161,14 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         },
-    }
+    },
+    "history": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/3",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
@@ -293,4 +300,4 @@ CRONJOBS = [
 ]
 
 # 解决crontab中文问题
-CRONTAB_COMMAND_PREFIX = 'LANG=zh_cn.UTF-8'
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'

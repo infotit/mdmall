@@ -126,3 +126,10 @@ class EmailVerifyView(APIView):
             return Response({"message": "非法的token"}, status=status.HTTP_400_BAD_REQUEST)
 
 
+class UserHistoryView(mixins.CreateModelMixin, GenericAPIView):
+    permission_classes = [IsAuthenticated]
+    serializers = serializers.AddUserHistorySerializer
+
+    def post(self, request):
+        return self.create(request)
+

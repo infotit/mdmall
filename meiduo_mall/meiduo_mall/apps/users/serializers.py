@@ -4,6 +4,7 @@ from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 
+from goods.models import SKU
 from .models import User
 from .utils import get_user_by_account
 from celery_tasks.emails.tasks import send_verify_email
@@ -188,3 +189,23 @@ class EmailSerializer(serializers.ModelSerializer):
         send_verify_email.delay(email, verify_url)
 
         return instance
+
+
+class AddUserHistorySerializer(serializers.Serializer):
+    sku_id = serializers.IntegerField(max_value=1)
+
+    def validate_sku_id(self, value):
+        try:
+            SKU.objects.get(id=value)
+        except SKU.DoesNotExist:
+            raise serializers.ValidationError('SKU不存在')
+        return value
+
+    def create(self, validated_data):
+        user = self.context['request'].user.id
+
+        redis_conn = get_redis_connection()
+        redis_conn
+
+
+

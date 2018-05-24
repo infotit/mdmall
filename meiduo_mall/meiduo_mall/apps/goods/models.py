@@ -1,9 +1,9 @@
+from django.db import models
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
-from django.db import models
 
-# Create your models here.
 from meiduo_mall.utils.models import BaseModel
+# Create your models here.
 
 
 class GoodsCategory(BaseModel):
