@@ -224,6 +224,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
+    # 'DEFAULT_PAGINATION_CLASS': 'meiduo_mall.utils.pagination.StandardResultsSetPagination',
 }
 
 # JWT_EXPIRATION_DELTA 指明token的有效期
@@ -278,7 +279,7 @@ REST_FRAMEWORK_EXTENSIONS = {
 DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.storage.FastDFSStorage'
 
 # FastDFS
-FDFS_BASE_URL = 'http://172.16.255.158:8888/'  # 访问图片的路径域名 ip地址修改为自己机器的ip地址
+FDFS_BASE_URL = 'http://172.16.255.159:8888/'  # 访问图片的路径域名 ip地址修改为自己机器的ip地址
 FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'meiduo_mall.utils/fastdfs/client.conf')
 
 # 富文本编辑器ckeditor配置
