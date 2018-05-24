@@ -8,6 +8,7 @@ from goods.models import SKU
 from .models import User
 from .utils import get_user_by_account
 from celery_tasks.emails.tasks import send_verify_email
+from . import constants
 
 
 class CreateUserSerializer(serializers.ModelSerializer):
@@ -192,7 +193,7 @@ class EmailSerializer(serializers.ModelSerializer):
 
 
 class AddUserHistorySerializer(serializers.Serializer):
-    sku_id = serializers.IntegerField(max_value=1)
+    sku_id = serializers.IntegerField(min_value=1)
 
     def validate_sku_id(self, value):
         try:
@@ -202,10 +203,22 @@ class AddUserHistorySerializer(serializers.Serializer):
         return value
 
     def create(self, validated_data):
-        user = self.context['request'].user.id
+        user_id = self.context['request'].user.id
 
-        redis_conn = get_redis_connection()
-        redis_conn
-
+        redis_conn = get_redis_connection("history")
+        sku_id = validated_data['sku_id']
+        pl = redis_conn.pipeline()
+        # 删除原有redis中的数据
+        # lrem(name, count, value)
+        pl.lrem("history_%s" % user_id, 0, sku_id)
+        # 添加用户浏览记录数据
+        # lpush(name, *values)
+        pl.lpush("history_%s" % user_id, sku_id)
+        # 超过最大值需要截断
+        # ltrim(name, start, end)[source]
+        pl.ltrim("history_%s" % user_id, 0, constants.USER_BROWSING_HISTORY_COUNTS_LIMIT - 1)
+        pl.execute()
+        # 返回
+        return validated_data
 
 

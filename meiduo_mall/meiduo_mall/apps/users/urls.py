@@ -19,4 +19,5 @@ urlpatterns = [
     # 邮件
     url(r'^emails/$', views.EmailView.as_view()),
     url(r'^emails/verification/$', views.EmailVerifyView.as_view()),
+    url(r'browse_histories/$', views.UserHistoryView.as_view()),
 ]

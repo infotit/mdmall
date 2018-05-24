@@ -3,6 +3,7 @@ import re
 from django.shortcuts import render
 
 # Create your views here.
+from django_redis import get_redis_connection
 from rest_framework import status
 from rest_framework.generics import CreateAPIView, GenericAPIView, RetrieveAPIView, UpdateAPIView
 from rest_framework.response import Response
@@ -10,12 +11,15 @@ from rest_framework.views import APIView
 from rest_framework import mixins
 from rest_framework.permissions import IsAuthenticated
 
+from goods.models import SKU
+from goods.serializers import SKUSerializer
 from users.serializers import EmailSerializer
-from users.models import User
-from users.serializers import UserDetailSerializer
+from .models import User
+from .serializers import UserDetailSerializer
 from verifications.serializers import CheckImageCodeSerializer
 from . import serializers
 from .utils import get_user_by_account
+from . import constants
 
 
 class UsernameCountView(APIView):
@@ -128,8 +132,25 @@ class EmailVerifyView(APIView):
 
 class UserHistoryView(mixins.CreateModelMixin, GenericAPIView):
     permission_classes = [IsAuthenticated]
-    serializers = serializers.AddUserHistorySerializer
+    serializer_class = serializers.AddUserHistorySerializer
 
     def post(self, request):
         return self.create(request)
+
+    def get(self, request):
+        user_id = request.user.id
+        # 从redis中查询数据
+        redis_conn = get_redis_connection("history")
+        sku_ids_list = redis_conn.lrange("history_%s" % user_id, 0, constants.USER_BROWSING_HISTORY_COUNTS_LIMIT)
+
+        # 根据redis查询的编号，从数据库中查询数据
+        sku_list = []
+        for sku_id in sku_ids_list:
+            sku_obj = SKU.objects.get(id=sku_id)
+            sku_list.append(sku_obj)
+        # 利用序列化器序列化数据
+        serializer = SKUSerializer(sku_list, many=True)
+        # 返回数据
+        return Response(serializer.data)
+
 
