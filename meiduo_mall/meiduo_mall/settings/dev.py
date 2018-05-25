@@ -224,7 +224,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
-    # 'DEFAULT_PAGINATION_CLASS': 'meiduo_mall.utils.pagination.StandardResultsSetPagination',
+    'DEFAULT_PAGINATION_CLASS': 'meiduo_mall.utils.pagination.StandardResultsSetPagination',
 }
 
 # JWT_EXPIRATION_DELTA 指明token的有效期
@@ -261,7 +261,7 @@ EMAIL_PORT = 25
 # 发送邮件的邮箱
 EMAIL_HOST_USER = 'infotit10@163.com'
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'python27'
+EMAIL_HOST_PASSWORD  = 'python27'
 # 收件人看到的发件人
 EMAIL_FROM = 'InfoTiT<infotit10@163.com>'
 
@@ -270,7 +270,7 @@ EMAIL_FROM = 'InfoTiT<infotit10@163.com>'
 # DEFAULT_USE_CACHE 缓存的存储方式，与配置文件中的CACHES的键对应
 REST_FRAMEWORK_EXTENSIONS = {
     # 缓存时间
-    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60 * 96,
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60,
     # 缓存存储
     'DEFAULT_USE_CACHE': 'default',
 }
@@ -279,7 +279,7 @@ REST_FRAMEWORK_EXTENSIONS = {
 DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.storage.FastDFSStorage'
 
 # FastDFS
-FDFS_BASE_URL = 'http://172.16.255.159:8888/'  # 访问图片的路径域名 ip地址修改为自己机器的ip地址
+FDFS_BASE_URL = 'http://172.16.255.160:8888/'  # 访问图片的路径域名 ip地址修改为自己机器的ip地址
 FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'meiduo_mall.utils/fastdfs/client.conf')
 
 # 富文本编辑器ckeditor配置
