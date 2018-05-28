@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from drf_haystack.viewsets import HaystackViewSet
 from rest_framework.generics import ListAPIView
-from .serializers import SKUSerializer
+from .serializers import SKUSerializer, SKUIndexSerializer
 from rest_framework_extensions.cache.mixins import ListCacheResponseMixin
 from rest_framework.filters import OrderingFilter
 
@@ -28,4 +29,9 @@ class SKUListView(ListAPIView):
     def get_queryset(self):
         category_id = self.kwargs.get('category_id')
         return SKU.objects.filter(category_id=category_id, is_launched=True)
+
+
+class SKUSearchViewSet(HaystackViewSet):
+    index_models = [SKU]
+    serializer_class = SKUIndexSerializer
 
