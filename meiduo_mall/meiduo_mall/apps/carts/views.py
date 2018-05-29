@@ -63,7 +63,7 @@ class CartView(APIView):
             cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()
             response = Response(serializer.data, status=status.HTTP_201_CREATED)
             response.set_cookie('cart', cart_cookie)
-            return Response(serializer.data)
+            return response
 
     def get(self, request):
         # 判断用户是否登录
@@ -85,7 +85,7 @@ class CartView(APIView):
                 }
         else:
             # 未登录 从cookie中查询数据
-            cart_str = request.COOKIES.get('cart' % user.id)
+            cart_str = request.COOKIES.get('cart')
             if cart_str:
                 cart_dict = pickle.loads(base64.b64decode(cart_str.encode()))
             else:
@@ -131,7 +131,7 @@ class CartView(APIView):
 
         else:
             # 未登录 从cookie中查询数据
-            cart_str = request.COOKIES.get('cart' % user.id)
+            cart_str = request.COOKIES.get('cart')
             if cart_str:
                 cart_dict = pickle.loads(base64.b64decode(cart_str.encode()))
             else:
@@ -144,7 +144,7 @@ class CartView(APIView):
             cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()
             response = Response(serializer.data)
             response.set_cookie('cart', cart_cookie)
-            return Response(serializer.data)
+            return response
 
     def delete(self, request):
         # 校验数据
@@ -156,7 +156,7 @@ class CartView(APIView):
         try:
             user = request.user
         except Exception:
-            user  = None
+            user = None
 
         if user is not None and user.is_authenticated:
             # 登录 删除redis中数据
@@ -168,13 +168,13 @@ class CartView(APIView):
             return Response(serializer.data, status=status.HTTP_204_NO_CONTENT)
         else:
             # 未登录 删除cookie中数据
-            cart_str = request.COOKIES.get('cart_%s' % user.id)
+            cart_str = request.COOKIES.get('cart')
             if cart_str:
                 cart_dict = pickle.loads(base64.b64decode(cart_str.encode()))
             else:
                 cart_dict = {}
 
-        response = Response(data=serializer.data, status=status.HTTP_204_NO_CONTENT)
+        response = Response(data=serializer.data)
         if sku_id in cart_dict:
             del cart_dict[sku_id]
             cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()

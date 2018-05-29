@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import mixins
 from rest_framework.permissions import IsAuthenticated
+from rest_framework_jwt.views import ObtainJSONWebToken
 
 from goods.models import SKU
 from goods.serializers import SKUSerializer
@@ -20,6 +21,7 @@ from verifications.serializers import CheckImageCodeSerializer
 from . import serializers
 from .utils import get_user_by_account
 from . import constants
+from carts.utils import merge_cookie_to_redis
 
 
 class UsernameCountView(APIView):
@@ -154,3 +156,11 @@ class UserHistoryView(mixins.CreateModelMixin, GenericAPIView):
         return Response(serializer.data)
 
 
+class UserAuthenticationView(ObtainJSONWebToken):
+    def post(self, request):
+        response = super().post(request)
+        serializer = self.get_serializer(data=request.data)
+        if serializer.is_valid():
+            user = serializer.validated_data.get('user')
+            response = merge_cookie_to_redis(request, response, user)
+        return response
