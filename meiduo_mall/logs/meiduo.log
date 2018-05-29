@@ -8219,3 +8219,531 @@ INFO 2018-05-28 18:16:35,124 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
 INFO 2018-05-28 18:17:24,395 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
 INFO 2018-05-28 18:17:24,396 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 910
 INFO 2018-05-28 18:17:26,360 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-05-28 20:12:41,853 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-05-28 20:12:41,941 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-05-28 20:12:41,949 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 910
+INFO 2018-05-28 20:12:43,082 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 910
+INFO 2018-05-28 20:12:43,094 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-05-28 20:12:44,449 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-28 20:12:44,478 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-05-28 20:13:03,601 basehttp 124 "POST /cart/ HTTP/1.1" 201 39
+INFO 2018-05-28 20:13:20,130 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2018-05-28 20:13:20,196 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1652
+ERROR 2018-05-28 20:13:23,059 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 422, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'property' is not JSON serializable
+ERROR 2018-05-28 20:13:23,132 basehttp 124 "GET /cart/ HTTP/1.1" 500 125221
+ERROR 2018-05-28 20:15:40,137 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 422, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'property' is not JSON serializable
+ERROR 2018-05-28 20:15:40,269 basehttp 124 "GET /cart/ HTTP/1.1" 500 125355
+ERROR 2018-05-28 20:17:24,975 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 422, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'property' is not JSON serializable
+ERROR 2018-05-28 20:17:25,255 basehttp 124 "GET /cart/ HTTP/1.1" 500 126996
+INFO 2018-05-28 20:17:37,723 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-05-28 20:17:37,812 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 229
+ERROR 2018-05-28 20:19:21,623 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 422, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/renderers.py", line 105, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/utils/encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'property' is not JSON serializable
+ERROR 2018-05-28 20:19:26,483 basehttp 124 "GET /cart/ HTTP/1.1" 500 130846
+INFO 2018-05-28 22:05:11,073 basehttp 124 "GET /cart/ HTTP/1.1" 200 7744
+WARNING 2018-05-28 22:05:11,317 base 152 Not Found: /favicon.ico
+WARNING 2018-05-28 22:05:11,318 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 7590
+INFO 2018-05-28 22:23:54,550 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-05-28 22:23:54,628 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 229
+ERROR 2018-05-28 22:25:15,354 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/carts/views.py", line 83, in get
+    for sku_id, count in redis_cart.items():
+AttributeError: 'StrictPipeline' object has no attribute 'items'
+ERROR 2018-05-28 22:25:15,437 basehttp 124 "GET /cart/ HTTP/1.1" 500 18875
+ERROR 2018-05-28 22:26:15,236 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/carts/views.py", line 83, in get
+    for sku_id, count in redis_cart.items():
+AttributeError: 'StrictPipeline' object has no attribute 'items'
+ERROR 2018-05-28 22:26:15,260 basehttp 124 "GET /cart/ HTTP/1.1" 500 18889
+ERROR 2018-05-28 22:27:12,201 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/carts/views.py", line 100, in get
+    sku.count = cart_dict[sku_id]['count']
+KeyError: b'12'
+ERROR 2018-05-28 22:27:12,277 basehttp 124 "GET /cart/ HTTP/1.1" 500 18790
+INFO 2018-05-28 22:28:49,470 basehttp 124 "GET /cart/ HTTP/1.1" 200 988
+INFO 2018-05-28 22:56:02,569 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-28 22:56:02,660 basehttp 124 "GET /cart/ HTTP/1.1" 200 988
+INFO 2018-05-28 22:56:11,731 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-05-28 22:56:11,800 basehttp 124 "GET /user/ HTTP/1.1" 200 99
+INFO 2018-05-28 22:56:11,818 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-05-28 22:56:11,848 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 936
+INFO 2018-05-28 22:56:24,144 basehttp 124 "GET /categories/157/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 446
+INFO 2018-05-28 22:56:24,153 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 200 396
+INFO 2018-05-28 22:56:25,257 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 200 396
+INFO 2018-05-28 22:56:25,266 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+WARNING 2018-05-28 22:56:26,974 basehttp 124 "POST /cart/ HTTP/1.1" 400 43
+INFO 2018-05-28 22:56:31,860 basehttp 124 "GET /cart/ HTTP/1.1" 200 988
+INFO 2018-05-28 22:56:41,669 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-05-28 22:56:46,483 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 200 396
+INFO 2018-05-28 22:56:46,491 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-05-28 22:56:48,699 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-05-28 22:56:53,926 basehttp 124 "GET /cart/ HTTP/1.1" 200 1197
+INFO 2018-05-28 22:57:07,979 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-05-28 23:00:03,385 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 200 396
+INFO 2018-05-28 23:00:03,398 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-05-28 23:00:21,905 basehttp 124 "GET /categories/157/hotskus/ HTTP/1.1" 200 396
+INFO 2018-05-28 23:00:21,912 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-05-28 23:00:23,893 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+INFO 2018-05-28 23:00:26,619 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:05:02,913 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:10:01,842 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-28 23:10:01,866 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:15:02,867 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:20:03,575 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-28 23:20:03,604 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:25:02,440 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:30:02,549 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:35:02,760 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-28 23:35:02,788 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:40:03,443 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:45:02,331 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:50:02,737 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-28 23:50:02,773 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-28 23:55:02,704 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-29 00:00:03,137 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 00:00:03,157 basehttp 124 "GET /cart/ HTTP/1.1" 200 1409
+INFO 2018-05-29 00:03:48,491 basehttp 124 "GET /categories/117/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 52
+INFO 2018-05-29 00:03:48,500 basehttp 124 "GET /categories/117/hotskus/ HTTP/1.1" 200 2
+INFO 2018-05-29 00:03:51,991 basehttp 124 "GET /categories/116/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 52
+INFO 2018-05-29 00:03:51,992 basehttp 124 "GET /categories/116/hotskus/ HTTP/1.1" 200 2
+INFO 2018-05-29 00:03:55,210 basehttp 124 "GET /categories/118/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 52
+INFO 2018-05-29 00:03:55,217 basehttp 124 "GET /categories/118/hotskus/ HTTP/1.1" 200 2
+INFO 2018-05-29 00:04:01,333 basehttp 124 "GET /categories/120/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 52
+INFO 2018-05-29 00:04:01,338 basehttp 124 "GET /categories/120/hotskus/ HTTP/1.1" 200 2
+INFO 2018-05-29 00:04:07,358 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 910
+INFO 2018-05-29 00:04:07,359 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1306
+INFO 2018-05-29 00:04:10,098 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1354
+INFO 2018-05-29 00:04:10,742 basehttp 124 "GET /categories/115/skus/?page=3&page_size=5&ordering=-create_time HTTP/1.1" 200 1021
+INFO 2018-05-29 00:04:12,008 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-05-29 00:04:12,016 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 200 910
+INFO 2018-05-29 00:04:12,044 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-05-29 00:04:14,126 basehttp 124 "POST /cart/ HTTP/1.1" 201 38
+ERROR 2018-05-29 00:04:20,977 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/carts/views.py", line 83, in get
+    for sku_id, count in redis_cart.items():
+AttributeError: 'StrictPipeline' object has no attribute 'items'
+ERROR 2018-05-29 00:04:21,051 basehttp 124 "GET /cart/ HTTP/1.1" 500 19431
+ERROR 2018-05-29 00:05:02,727 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/stephenwang/.virtualenvs/mdmall/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/stephenwang/PPP/Code/flask_dir/dproject/mdmall/meiduo_mall/meiduo_mall/apps/carts/views.py", line 83, in get
+    for sku_id, count in redis_cart.items():
+AttributeError: 'StrictPipeline' object has no attribute 'items'
+ERROR 2018-05-29 00:05:02,748 basehttp 124 "GET /cart/ HTTP/1.1" 500 19431
+INFO 2018-05-29 00:05:43,351 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:10:03,073 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:15:02,510 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 00:15:02,536 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:20:02,320 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:25:02,279 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:30:02,511 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 00:30:02,536 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:46:51,418 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 00:46:51,477 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+WARNING 2018-05-29 00:46:53,480 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+WARNING 2018-05-29 00:47:10,287 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+INFO 2018-05-29 00:47:23,256 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:47:31,424 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+WARNING 2018-05-29 00:47:34,321 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+WARNING 2018-05-29 00:47:59,151 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+WARNING 2018-05-29 00:48:03,625 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+INFO 2018-05-29 00:49:49,322 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+ERROR 2018-05-29 00:49:53,329 exceptions 26 [<carts.views.CartView object at 0x108d39d68>] Command # 2 (SADD cart_select_1) of pipeline caused error: wrong number of arguments for 'sadd' command
+ERROR 2018-05-29 00:49:53,330 basehttp 124 "PUT /cart/ HTTP/1.1" 507 35
+INFO 2018-05-29 00:50:02,661 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+ERROR 2018-05-29 00:50:06,451 exceptions 26 [<carts.views.CartView object at 0x108d70fd0>] Command # 2 (SADD cart_select_1) of pipeline caused error: wrong number of arguments for 'sadd' command
+ERROR 2018-05-29 00:50:06,452 basehttp 124 "PUT /cart/ HTTP/1.1" 507 35
+ERROR 2018-05-29 00:50:12,731 exceptions 26 [<carts.views.CartView object at 0x108d92d68>] Command # 2 (SADD cart_select_1) of pipeline caused error: wrong number of arguments for 'sadd' command
+ERROR 2018-05-29 00:50:12,732 basehttp 124 "PUT /cart/ HTTP/1.1" 507 35
+ERROR 2018-05-29 00:50:33,770 exceptions 26 [<carts.views.CartView object at 0x108da60b8>] Command # 2 (SADD cart_select_1) of pipeline caused error: wrong number of arguments for 'sadd' command
+ERROR 2018-05-29 00:50:33,771 basehttp 124 "PUT /cart/ HTTP/1.1" 507 35
+INFO 2018-05-29 00:52:11,944 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:52:17,177 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:52:18,983 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:52:20,357 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:52:55,842 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:52:56,690 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 00:52:58,232 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:52:58,821 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:53:03,661 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:03,793 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:03,938 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:05,766 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:07,150 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:53:08,542 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:08,695 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:08,850 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:08,973 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-05-29 00:53:10,268 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+WARNING 2018-05-29 00:53:14,646 basehttp 124 "PUT /cart/ HTTP/1.1" 400 43
+INFO 2018-05-29 00:53:17,388 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+WARNING 2018-05-29 00:53:18,352 basehttp 124 "PUT /cart/ HTTP/1.1" 400 43
+INFO 2018-05-29 00:53:37,120 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 00:53:38,672 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 00:53:41,837 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 00:53:46,011 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 00:53:50,742 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:53:51,495 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+WARNING 2018-05-29 00:53:53,764 basehttp 124 "PUT /cart/ HTTP/1.1" 400 43
+INFO 2018-05-29 00:53:56,383 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:53:58,043 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:53:59,287 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:53:59,791 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:54:00,736 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:54:01,958 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:54:02,498 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:54:33,240 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:55:03,092 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:55:35,638 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:55:36,353 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:55:39,689 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:57:28,628 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 00:57:28,700 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:57:31,565 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 00:57:34,053 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 00:57:34,516 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 00:57:35,711 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 00:57:36,190 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:00:03,319 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:04:32,766 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:04:42,046 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:04:44,136 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:04:46,713 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:04:47,338 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:04:52,551 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 01:04:53,150 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 01:04:54,341 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 01:04:55,237 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:05:03,124 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:05:50,023 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:05:54,142 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:05:55,784 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:06:33,235 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:06:37,399 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:06:49,368 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:06:53,690 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:07:16,025 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:07:28,280 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:07:35,989 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 01:07:36,050 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:07:38,277 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:09:33,299 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:09:45,982 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:10:03,699 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:10:08,802 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:12:11,713 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:12:16,434 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:12:26,929 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:12:31,878 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:13:20,320 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:13:22,994 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:13:32,275 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:13:43,990 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:14:00,477 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:15:03,174 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:17:11,875 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:18:22,014 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 01:18:22,077 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:18:27,280 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:18:28,995 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:18:37,273 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:18:39,030 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:20:00,575 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:20:03,281 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:23:51,101 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:23:59,037 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:24:01,686 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:24:28,293 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:24:31,442 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:25:02,965 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:25:11,322 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:25:13,963 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:27:27,444 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:30:03,208 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 01:30:03,294 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:30:16,613 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:30:59,602 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:31:03,962 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:31:30,533 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:31:32,612 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:31:50,061 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:32:21,883 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:32:23,451 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:32:38,690 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:32:40,171 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:32:48,901 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:34:15,313 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:34:17,447 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:34:41,796 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:36:34,244 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:37:10,721 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:37:41,198 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 01:38:46,300 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:39:21,085 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 01:39:26,252 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:40:03,196 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:40:12,906 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 01:40:12,960 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:40:14,192 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:41:56,413 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:42:10,041 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 01:42:20,607 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 01:42:25,884 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 01:42:27,572 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:42:44,723 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 01:43:00,213 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 01:43:16,192 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:45:02,871 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:45:29,696 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:45:38,459 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:46:10,654 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 01:46:12,342 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:09:48,269 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 09:09:48,408 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:10:03,011 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:10:18,568 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 09:10:55,379 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 09:11:05,247 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 09:11:10,033 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 09:11:20,241 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 09:11:32,261 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 09:11:34,457 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 09:11:36,226 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 09:11:37,642 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:11:41,617 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:15:03,067 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:20:02,081 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 09:20:02,122 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:25:02,183 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:45:01,958 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 09:45:02,024 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:50:03,212 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:55:03,067 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:56:43,997 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 09:56:44,041 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:56:46,515 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:56:49,222 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 09:56:50,307 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-05-29 09:56:51,312 basehttp 124 "GET /cart/ HTTP/1.1" 200 1640
+INFO 2018-05-29 09:56:57,008 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-05-29 09:56:59,135 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 10:00:03,299 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 10:05:02,281 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 10:10:02,068 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-05-29 10:10:02,112 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 10:11:40,001 basehttp 124 "GET /cart/ HTTP/1.1" 200 1639
+INFO 2018-05-29 10:11:41,163 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 12
+INFO 2018-05-29 10:11:42,802 basehttp 124 "GET /cart/ HTTP/1.1" 200 1430
+INFO 2018-05-29 10:11:46,107 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 12
+INFO 2018-05-29 10:11:46,906 basehttp 124 "GET /cart/ HTTP/1.1" 200 1218
+INFO 2018-05-29 10:15:04,248 basehttp 124 "GET /cart/ HTTP/1.1" 200 1218
